@@ -1,0 +1,203 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "kit_id": {
+      "type": "string"
+    },
+    "latest_version": {
+      "type": "integer"
+    },
+    "basic_info": {
+      "type": "object",
+      "properties": {
+        "kit_name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "detail": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "kit_name",
+        "description",
+        "detail",
+        "category"
+      ]
+    },
+    "history": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "kit_version": {
+              "type": "integer"
+            },
+            "active": {
+              "type": "boolean"
+            },
+            "created_by": {
+              "type": "string"
+            },
+            "updated_by": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            },
+            "products": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "product_id": {
+                      "type": "string"
+                    },
+                    "custom": {
+                      "type": "boolean"
+                    },
+                    "product_version": {
+                      "type": "integer"
+                    },
+                    "basic_info": {
+                      "type": "object",
+                      "properties": {
+                        "product_name": {
+                          "type": "string"
+                        },
+                        "category": {
+                          "type": "string"
+                        },
+                        "description": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "product_name",
+                        "category",
+                        "description"
+                      ]
+                    },
+                    "spec": {
+                      "type": "object",
+                      "properties": {
+                        "size": {
+                          "type": "string"
+                        },
+                        "material": {
+                          "type": "string"
+                        },
+                        "print": {
+                          "type": "string"
+                        },
+                        "processing": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "size",
+                        "material",
+                        "print",
+                        "processing"
+                      ]
+                    },
+                    "manufacture": {
+                      "type": "object",
+                      "properties": {
+                        "shop": {
+                          "type": "string"
+                        },
+                        "duration": {
+                          "type": "integer"
+                        },
+                        "cost": {
+                          "type": "integer"
+                        },
+                        "price": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "shop",
+                        "duration",
+                        "cost",
+                        "price"
+                      ]
+                    },
+                    "items": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "item_id": {
+                              "type": "string"
+                            },
+                            "item_name": {
+                              "type": "string"
+                            },
+                            "logo_type": {
+                              "type": "string"
+                            },
+                            "volume": {
+                              "type": "integer"
+                            },
+                            "amount": {
+                              "type": "integer"
+                            }
+                          },
+                          "required": [
+                            "item_id",
+                            "item_name",
+                            "logo_type",
+                            "volume",
+                            "amount"
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "product_id",
+                    "custom",
+                    "product_version",
+                    "basic_info",
+                    "spec",
+                    "manufacture",
+                    "items"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "kit_version",
+            "active",
+            "created_by",
+            "updated_by",
+            "created_at",
+            "updated_at",
+            "products"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "kit_id",
+    "latest_version",
+    "basic_info",
+    "history"
+  ]
+}

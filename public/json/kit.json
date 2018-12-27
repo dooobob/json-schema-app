@@ -1,0 +1,60 @@
+{
+    "kit_id": "",
+    "latest_version": 0,
+    "basic_info":
+    {
+        "kit_name": "",
+        "description": "",
+        "detail": "",
+        "category": ""
+    },
+    "history":
+    [
+        {
+            "kit_version": 0,
+            "active": true,
+            "created_by": "",
+            "updated_by": "",
+            "created_at": "",
+            "updated_at": "",
+            "products":
+            [
+                {
+                    "product_id": "",
+                    "custom": false,
+                    "product_version": 0,
+                    "basic_info":
+                    {
+                        "product_name": "",
+                        "category": "",
+                        "description": ""
+                    },
+                    "spec":
+                    {
+                        "size": "",
+                        "material": "",
+                        "print": "",
+                        "processing": ""
+                    },
+                    "manufacture":
+                    {
+                        "shop": "",
+                        "duration": 0,
+                        "cost": 0,
+                        "price": 0
+                    },
+                    "items":
+                    [
+                        {
+                            "item_id": "",
+                            "item_name": "",
+                            "logo_type": "",
+                            "volume": 0,
+                            "amount": 0
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "todo_id": {
+      "type": "string"
+    },
+    "sales_id": {
+      "type": "string"
+    },
+    "sales_name": {
+      "type": "string"
+    },
+    "updated_by": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string"
+    },
+    "comment": {
+      "type": "string"
+    },
+    "due_date": {
+      "type": "string"
+    },
+    "done": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "todo_id",
+    "sales_id",
+    "sales_name",
+    "updated_by",
+    "updated_at",
+    "comment",
+    "due_date",
+    "done"
+  ]
+}
