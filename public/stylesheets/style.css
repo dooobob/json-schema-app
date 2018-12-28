@@ -6,3 +6,34 @@ body {
 a {
   color: #00B7FF;
 }
+
+ul {
+  padding-bottom: 10px;
+  list-style: none;
+  border-left: 1px solid;
+}
+
+li>ul {
+  /* border-top: 1px solid; */
+}
+
+ul>li>span {
+  margin-right: 30px;
+  width: 200px;
+  display: inline-block;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.field-name {
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+.title {
+  font-weight: bolder;
+  font-size: 16px;
+}

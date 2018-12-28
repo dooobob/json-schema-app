@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>json schema</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <textarea hidden name="schema" id="schema" cols="0" rows="0"><%= JSON.stringify(schema) %></textarea>
+  <div class="container">
+    <ul class="schema-container" id="schema-container"></ul>
+  </div>
+</body>
+<script>
+  const schema = JSON.parse(document.getElementById('schema').value);
+  console.log(schema);
+
+  function createElement(data, parent_element = document.getElementById('schema-container')) {
+    let li;
+    if (data.properties) {
+      Object.keys(data.properties).forEach(key => {
+        li = document.createElement('li');
+        let node = '<span class="field-name">' + key + '</span>' +
+          '<span class="type">' + data.properties[key].type + '</span>' +
+          '<span class="title">' + data.properties[key].title + '</span>' +
+          '<span class="description">' + data.properties[key].description + '</span>';
+        li.insertAdjacentHTML('beforeend', node);
+        parent_element.append(li);
+        if (data.properties[key].type === 'object') {
+          let childNode = document.createElement('ul');
+          li.append(childNode);
+          createElement(data.properties[key], childNode);
+        } else if (data.properties[key].type === 'array') {
+          let childNode = document.createElement('ul');
+          li.append(childNode);
+          createElement(data.properties[key], childNode);
+        }
+      });
+    } else if (data.type === 'array') {
+      createElement(data.items[0], parent_element);
+    }
+  }
+
+  createElement(schema);
+</script>
+
+</html>

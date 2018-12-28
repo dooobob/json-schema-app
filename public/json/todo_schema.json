@@ -1,29 +1,47 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "todo",
+  "description": "",
   "type": "object",
   "properties": {
     "todo_id": {
+      "title": "todo id",
+      "description": "",
       "type": "string"
     },
     "sales_id": {
+      "title": "영업 id",
+      "description": "",
       "type": "string"
     },
     "sales_name": {
+      "title": "영업 이름",
+      "description": "",
       "type": "string"
     },
     "updated_by": {
+      "title": "업데이터",
+      "description": "",
       "type": "string"
     },
     "updated_at": {
+      "title": "업데이트 일시",
+      "description": "",
       "type": "string"
     },
     "comment": {
+      "title": "내용",
+      "description": "",
       "type": "string"
     },
     "due_date": {
+      "title": "기한",
+      "description": "",
       "type": "string"
     },
     "done": {
+      "title": "완료",
+      "description": "",
       "type": "boolean"
     }
   },

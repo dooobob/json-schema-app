@@ -1,35 +1,57 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "user",
+  "description": "",
   "type": "object",
   "properties": {
     "user_id": {
+      "title": "user id",
+      "description": "",
       "type": "string"
     },
     "user_pw": {
+      "title": "user password",
+      "description": "",
       "type": "string"
     },
     "user_name": {
+      "title": "user name",
+      "description": "",
       "type": "string"
     },
     "user_email": {
+      "title": "user email",
+      "description": "",
       "type": "string"
     },
     "user_level": {
+      "title": "user 등급",
+      "description": "",
       "type": "integer"
     },
     "created_at": {
+      "title": "계정 생성일",
+      "description": "",
       "type": "string"
     },
     "updated_at": {
+      "title": "계정 정보 수정일",
+      "description": "",
       "type": "string"
     },
     "auth": {
+      "title": "인증",
+      "description": "",
       "type": "object",
       "properties": {
         "token": {
+          "title": "토큰",
+          "description": "",
           "type": "string"
         },
         "updated_at": {
+          "title": "토큰 업데이트일",
+          "description": "",
           "type": "string"
         }
       },
