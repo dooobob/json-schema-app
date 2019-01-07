@@ -39,6 +39,11 @@
       "description": "",
       "type": "string"
     },
+    "salt": {
+      "title": "pw 암호화 salt",
+      "description": "",
+      "type": "string"
+    },
     "auth": {
       "title": "인증",
       "description": "",

@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "log",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "log_id": {
+      "title": "로그 id",
+      "description": "",
+      "type": "string"
+    },
+    "requested_by": {
+      "title": "요청자",
+      "description": "",
+      "type": "string"
+    },
+    "requested_at": {
+      "title": "요청일시",
+      "description": "",
+      "type": "string"
+    },
+    "request_url": {
+      "title": "요청 url",
+      "description": "",
+      "type": "string"
+    },
+    "parameter": {
+      "title": "파라미터",
+      "description": "",
+      "type": "string"
+    }
+  },
+  "required": [
+    "log_id",
+    "requested_by",
+    "requested_at",
+    "request_url",
+    "parameter"
+  ]
+}

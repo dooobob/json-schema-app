@@ -6,8 +6,8 @@
     "user_level": 0,
     "created_at": "",
     "updated_at": "",
-    "auth":
-    {
+    "salt": "",
+    "auth": {
         "token": "",
         "updated_at": ""
     }
