@@ -32,12 +32,12 @@
     "created_at": {
       "title": "계정 생성일",
       "description": "",
-      "type": "string"
+      "type": "number"
     },
     "updated_at": {
       "title": "계정 정보 수정일",
       "description": "",
-      "type": "string"
+      "type": "number"
     },
     "salt": {
       "title": "pw 암호화 salt",
@@ -57,7 +57,7 @@
         "updated_at": {
           "title": "토큰 업데이트일",
           "description": "",
-          "type": "string"
+          "type": "number"
         }
       },
       "required": [

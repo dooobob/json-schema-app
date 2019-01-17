@@ -27,12 +27,12 @@
     "created_at": {
       "title": "생성일시",
       "description": "",
-      "type": "string"
+      "type": "number"
     },
     "updated_at": {
       "title": "업데이트 일시",
       "description": "",
-      "type": "string"
+      "type": "number"
     },
     "selected": {
       "title": "선택된 항목",
@@ -307,7 +307,7 @@
           "created_at": {
             "title": "작성자",
             "description": "",
-            "type": "string"
+            "type": "number"
           }
         },
         "required": [

@@ -27,7 +27,7 @@
     "updated_at": {
       "title": "업데이트 일시",
       "description": "",
-      "type": "string"
+      "type": "number"
     },
     "comment": {
       "title": "내용",

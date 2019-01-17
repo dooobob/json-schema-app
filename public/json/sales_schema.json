@@ -22,7 +22,7 @@
     "created_at": {
       "title": "생성일시",
       "description": "",
-      "type": "string"
+      "type": "number"
     },
     "updated_by": {
       "title": "업데이터",
@@ -32,12 +32,12 @@
     "updated_at": {
       "title": "업데이트일시",
       "description": "",
-      "type": "string"
+      "type": "number"
     },
     "ordered_at": {
       "title": "주문일시",
       "description": "",
-      "type": "string"
+      "type": "number"
     },
     "basic_info": {
       "title": "기본정보",
@@ -165,7 +165,7 @@
               "updated_at": {
                 "title": "업데이트일시",
                 "description": "",
-                "type": "string"
+                "type": "number"
               }
             },
             "required": [
@@ -243,12 +243,12 @@
           "created_at": {
             "title": "생성일시",
             "description": "",
-            "type": "string"
+            "type": "number"
           },
           "updated_at": {
             "title": "업데이트일시",
             "description": "",
-            "type": "string"
+            "type": "number"
           },
           "comments": {
             "title": "메모목록",
@@ -272,7 +272,7 @@
                 "created_at": {
                   "title": "작성일시",
                   "description": "",
-                  "type": "string"
+                  "type": "number"
                 }
               },
               "required": [

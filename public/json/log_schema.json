@@ -17,7 +17,7 @@
     "requested_at": {
       "title": "요청일시",
       "description": "",
-      "type": "string"
+      "type": "number"
     },
     "request_url": {
       "title": "요청 url",

@@ -79,12 +79,12 @@
           "created_at": {
             "title": "생성일",
             "description": "",
-            "type": "string"
+            "type": "number"
           },
           "updated_at": {
             "title": "업데이트일",
             "description": "",
-            "type": "string"
+            "type": "number"
           },
           "products": {
             "title": "품목리스트",

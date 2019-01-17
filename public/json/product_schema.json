@@ -30,12 +30,12 @@
     "created_at": {
       "title": "생성일",
       "description": "",
-      "type": "string"
+      "type": "number"
     },
     "updated_at": {
       "title": "수정일",
       "description": "",
-      "type": "string"
+      "type": "number"
     },
     "basic_info": {
       "title": "기본 정보",
