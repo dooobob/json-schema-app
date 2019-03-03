@@ -47,6 +47,26 @@
         "category"
       ]
     },
+    "created_by": {
+      "title": "생성자",
+      "description": "",
+      "type": "string"
+    },
+    "updated_by": {
+      "title": "업데이터",
+      "description": "",
+      "type": "string"
+    },
+    "created_at": {
+      "title": "생성일",
+      "description": "",
+      "type": "number"
+    },
+    "updated_at": {
+      "title": "업데이트일",
+      "description": "",
+      "type": "number"
+    },
     "history": {
       "title": "히스토리 목록",
       "description": "",
