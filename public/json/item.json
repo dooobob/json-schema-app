@@ -1,0 +1,101 @@
+{
+    "item_id": "",
+    "created_by": "",
+    "updated_by": "",
+    "created_at": "",
+    "updated_at": "",
+    "version": "",
+    "basic_info": {
+        "item_name": "",
+        "usage": "",
+        "category": "",
+        "note": ""
+    },
+    "contents": [{
+        "content_id": "",
+        "content_index": "",
+        "content_name": "",
+        "note": "",
+        "volume": 0,
+        "stock": 0,
+        "created_by": "",
+        "updated_by": "",
+        "created_at": "",
+        "updated_at": "",
+        "hidden": false,
+        "spec": {
+            "_id": "",
+            "spec_code": "",
+            "custom": false,
+            "description": "",
+            "width": "",
+            "height": "",
+            "depth": "",
+            "material": "",
+            "print": "",
+            "processing": "",
+            "cost": 0,
+            "duration": 0,
+            "note": "",
+            "version": 0,
+            "created_by": "",
+            "updated_by": "",
+            "created_at": "",
+            "updated_at": "",
+            "shop": {
+                "shop_id": "",
+                "shop_name": ""
+            }
+        }
+    }],
+    "histories": [{
+        "_id": "",
+        "version": "",
+        "basic_info": {
+            "item_name": "",
+            "usage": "",
+            "category": "",
+            "note": ""
+        },
+        "contents": [{
+            "content_id": "",
+            "content_index": "",
+            "content_name": "",
+            "note": "",
+            "volume": 0,
+            "stock": 0,
+            "created_by": "",
+            "updated_by": "",
+            "created_at": "",
+            "updated_at": "",
+            "hidden": false,
+            "spec": {
+                "_id": "",
+                "spec_code": "",
+                "custom": false,
+                "description": "",
+                "width": "",
+                "height": "",
+                "depth": "",
+                "material": "",
+                "print": "",
+                "processing": "",
+                "cost": 0,
+                "duration": 0,
+                "note": "",
+                "version": 0,
+                "created_by": "",
+                "updated_by": "",
+                "created_at": "",
+                "updated_at": "",
+                "shop": {
+                    "shop_id": "",
+                    "shop_name": ""
+                }
+            }
+        }],
+        "created_by": "",
+        "created_at": ""
+    }],
+    "hidden": true
+}

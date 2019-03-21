@@ -296,6 +296,10 @@
     "kit_id",
     "latest_version",
     "basic_info",
+    "created_by",
+    "updated_by",
+    "created_at",
+    "updated_at",
     "history"
   ]
 }

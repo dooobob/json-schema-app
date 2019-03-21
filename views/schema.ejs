@@ -7,6 +7,7 @@
 </head>
 
 <body>
+  <%- include('header'); -%>
   <textarea hidden name="schema" id="schema" cols="0" rows="0"><%= JSON.stringify(schema) %></textarea>
   <div class="container">
     <ul class="schema-container" id="schema-container"></ul>
@@ -23,8 +24,10 @@
         li = document.createElement('li');
         let node = '<span class="field-name">' + key + '</span>' +
           '<span class="type">' + data.properties[key].type + '</span>' +
-          '<span class="title">' + data.properties[key].title + '</span>' +
-          '<span class="description">' + data.properties[key].description + '</span>';
+          '<span class="title">' + data.properties[key].title + '</span>';
+        if (data.properties[key].description) {
+          node += '<span class="description">' + data.properties[key].description + '</span>';
+        }
         li.insertAdjacentHTML('beforeend', node);
         parent_element.append(li);
         if (data.properties[key].type === 'object') {

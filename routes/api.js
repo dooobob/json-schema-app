@@ -2,10 +2,11 @@ var express = require('express');
 var router = express.Router();
 var user = require('../public/json/user');
 var todo = require('../public/json/todo');
-var product = require('../public/json/product');
+var item = require('../public/json/item');
 var kit = require('../public/json/kit');
 var sales = require('../public/json/sales');
 var order = require('../public/json/order');
+var spec = require('../public/json/spec');
 
 
 /* GET home page. */
@@ -17,8 +18,8 @@ router.get('/todo', function (req, res, next) {
   res.json(todo);
 });
 
-router.get('/product', function (req, res, next) {
-  res.json(product);
+router.get('/item', function (req, res, next) {
+  res.json(item);
 });
 
 router.get('/kit', function (req, res, next) {
@@ -31,6 +32,10 @@ router.get('/sales', function (req, res, next) {
 
 router.get('/order', function (req, res, next) {
   res.json(order);
+});
+
+router.get('/spec', function (req, res, next) {
+  res.json(spec);
 });
 
 module.exports = router;

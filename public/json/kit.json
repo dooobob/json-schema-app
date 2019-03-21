@@ -1,11 +1,15 @@
 {
     "kit_id": "",
-    "latest_version": 0,
+    "version": 0,
     "basic_info": {
         "kit_name": "",
-        "description": "",
-        "detail": "",
-        "category": ""
+        "summary": "",
+        "description": {
+            "purpose": "",
+            "component": ""
+        },
+        "category": "",
+        "note": ""
     },
     "created_by": "",
     "updated_by": "",
