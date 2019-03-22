@@ -1,0 +1,115 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "contact_id": {
+            "title": "연락처 id",
+            "type": "string"
+        },
+        "organization": {
+            "title": "기관/거래처",
+            "type": "string"
+        },
+        "location": {
+            "title": "지역",
+            "type": "string"
+        },
+        "manager": {
+            "title": "담당자",
+            "type": "object",
+            "properties": {
+                "name": {
+                    "title": "이름",
+                    "type": "string"
+                },
+                "position": {
+                    "title": "직책",
+                    "type": "string"
+                },
+                "phone": {
+                    "title": "전화번호",
+                    "type": "string"
+                },
+                "email": {
+                    "title": "이메일",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "name",
+                "position",
+                "phone",
+                "email"
+            ]
+        },
+        "description": {
+            "title": "상세설명",
+            "type": "string"
+        },
+        "etc": {
+            "title": "비고",
+            "type": "string"
+        },
+        "subscribe": {
+            "title": "즐겨찾기",
+            "type": "boolean"
+        },
+        "hidden": {
+            "title": "숨기기",
+            "type": "boolean"
+        },
+        "source": {
+            "title": "유입",
+            "description": "in/out",
+            "type": "string"
+        },
+        "reaction": {
+            "title": "반응",
+            "description": "negative/normal/positive",
+            "type": "string"
+        },
+        "new": {
+            "title": "신규",
+            "type": "boolean"
+        },
+        "created_by": {
+            "title": "작성자",
+            "type": "string"
+        },
+        "updated_by": {
+            "title": "수정자",
+            "type": "string"
+        },
+        "created_at": {
+            "title": "작성일시",
+            "type": "string"
+        },
+        "updated_at": {
+            "title": "수정일시",
+            "type": "string"
+        },
+        "contact_type": {
+            "title": "연락처 타입",
+            "description": "customer/shop",
+            "type": "string"
+        }
+    },
+    "required": [
+        "contact_id",
+        "organization",
+        "location",
+        "manager",
+        "description",
+        "etc",
+        "subscribe",
+        "hidden",
+        "source",
+        "reaction",
+        "new",
+        "created_by",
+        "updated_by",
+        "created_at",
+        "updated_at",
+        "contact_type"
+    ]
+}

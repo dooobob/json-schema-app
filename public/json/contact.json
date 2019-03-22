@@ -1,0 +1,23 @@
+{
+    "contact_id": "",
+    "organization": "",
+    "location": "",
+    "manager": {
+        "name": "",
+        "position": "",
+        "phone": "",
+        "email": ""
+    },
+    "description": "",
+    "etc": "",
+    "subscribe": false,
+    "hidden": false,
+    "source": "",
+    "reaction": "",
+    "new": true,
+    "created_by": "",
+    "updated_by": "",
+    "created_at": "",
+    "updated_at": "",
+    "contact_type": ""
+}
