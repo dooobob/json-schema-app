@@ -46,7 +46,7 @@
             "title": "상세설명",
             "type": "string"
         },
-        "etc": {
+        "note": {
             "title": "비고",
             "type": "string"
         },
@@ -100,7 +100,7 @@
         "location",
         "manager",
         "description",
-        "etc",
+        "note",
         "subscribe",
         "hidden",
         "source",
