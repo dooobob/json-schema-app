@@ -107,10 +107,6 @@
                         "title": "내용",
                         "type": "object",
                         "properties": {
-                            "_id": {
-                                "title": "object id",
-                                "type": "string"
-                            },
                             "spec_code": {
                                 "title": "spec code",
                                 "type": "string"
@@ -183,7 +179,6 @@
                             }
                         },
                         "required": [
-                            "_id",
                             "spec_code",
                             "custom",
                             "description",
