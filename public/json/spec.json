@@ -13,14 +13,14 @@
     "duration": 0,
     "note": "",
     "version": 0,
-    "created_by": "",
-    "updated_by": "",
-    "created_at": "",
-    "updated_at": "",
     "shop": {
         "shop_id": "",
         "shop_name": ""
     },
+    "created_by": "",
+    "updated_by": "",
+    "created_at": "",
+    "updated_at": "",
     "histories": [{
         "_id": "",
         "content": {
