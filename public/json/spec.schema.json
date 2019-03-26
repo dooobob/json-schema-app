@@ -77,19 +77,19 @@
             ]
         },
         "created_by": {
-            "title": "작성일시",
-            "type": "string"
-        },
-        "updated_by": {
-            "title": "수정일시",
-            "type": "string"
-        },
-        "created_at": {
             "title": "작성자",
             "type": "string"
         },
-        "updated_at": {
+        "updated_by": {
             "title": "수정자",
+            "type": "string"
+        },
+        "created_at": {
+            "title": "작성일시",
+            "type": "string"
+        },
+        "updated_at": {
+            "title": "수정일시",
             "type": "string"
         },
         "histories": {
