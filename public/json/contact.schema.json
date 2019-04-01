@@ -10,7 +10,7 @@
             "title": "기관/거래처",
             "type": "string"
         },
-        "location": {
+        "region": {
             "title": "지역",
             "type": "string"
         },
@@ -97,7 +97,7 @@
     "required": [
         "contact_id",
         "organization",
-        "location",
+        "region",
         "manager",
         "description",
         "note",

@@ -28,6 +28,7 @@
     },
     "basic_info": {
       "type": "object",
+      "title": "기본정보",
       "properties": {
         "item_name": {
           "title": "품목명",
