@@ -58,6 +58,10 @@
             "title": "버전",
             "type": "integer"
         },
+        "saved": {
+            "title": "저장됨",
+            "type": "integer"
+        },
         "shop": {
             "title": "거래처",
             "type": "object",
@@ -159,6 +163,10 @@
                                 "title": "버전",
                                 "type": "integer"
                             },
+                            "saved": {
+                                "title": "저장됨",
+                                "type": "integer"
+                            },
                             "shop": {
                                 "title": "거래처",
                                 "type": "object",
@@ -192,6 +200,7 @@
                             "duration",
                             "note",
                             "version",
+                            "saved",
                             "shop"
                         ]
                     },
@@ -233,6 +242,7 @@
         "duration",
         "note",
         "version",
+        "saved",
         "shop",
         "created_by",
         "updated_by",

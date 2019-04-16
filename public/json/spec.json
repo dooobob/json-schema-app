@@ -13,6 +13,7 @@
     "duration": 0,
     "note": "",
     "version": 0,
+    "saved": 0,
     "shop": {
         "shop_id": "",
         "shop_name": ""
@@ -37,6 +38,7 @@
             "duration": 0,
             "note": "",
             "version": 0,
+            "saved": 0,
             "shop": {
                 "shop_id": "",
                 "shop_name": ""
