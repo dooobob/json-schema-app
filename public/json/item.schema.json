@@ -203,7 +203,7 @@
           },
           "index": {
             "title": "구성품 순번",
-            "type": "string"
+            "type": "number"
           },
           "name": {
             "title": "구성품명",
