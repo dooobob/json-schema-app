@@ -60,19 +60,19 @@
         },
         "cost": {
           "title": "제작단가",
-          "type": "integer"
+          "type": "number"
         },
         "price": {
           "title": "판매가",
-          "type": "integer"
+          "type": "number"
         },
         "supply_price": {
           "title": "납품가",
-          "type": "integer"
+          "type": "number"
         },
         "bidding_price": {
           "title": "입찰가",
-          "type": "integer"
+          "type": "number"
         }
       },
       "required": [
@@ -134,11 +134,11 @@
         },
         "cost": {
           "title": "제작단가",
-          "type": "integer"
+          "type": "number"
         },
         "duration": {
           "title": "소요기간",
-          "type": "integer"
+          "type": "number"
         },
         "note": {
           "title": "비고",
@@ -146,11 +146,11 @@
         },
         "version": {
           "title": "버전",
-          "type": "integer"
+          "type": "number"
         },
         "saved": {
           "title": "저장됨",
-          "type": "integer"
+          "type": "number"
         },
         "shop": {
           "title": "거래처",
@@ -215,11 +215,11 @@
           },
           "volume": {
             "title": "권장량",
-            "type": "integer"
+            "type": "number"
           },
           "stock": {
             "title": "재고",
-            "type": "integer"
+            "type": "number"
           }
         },
         "required": [
@@ -249,7 +249,7 @@
           },
           "saved": {
             "title": "저장됨",
-            "type": "integer"
+            "type": "number"
           },
           "basic_info": {
             "title": "기본정보",
@@ -277,19 +277,19 @@
               },
               "cost": {
                 "title": "제작단가",
-                "type": "integer"
+                "type": "number"
               },
               "price": {
                 "title": "판매가",
-                "type": "integer"
+                "type": "number"
               },
               "supply_price": {
                 "title": "납품가",
-                "type": "integer"
+                "type": "number"
               },
               "bidding_price": {
                 "title": "입찰가",
-                "type": "integer"
+                "type": "number"
               }
             },
             "required": [
@@ -350,11 +350,11 @@
               },
               "cost": {
                 "title": "제작단가",
-                "type": "integer"
+                "type": "number"
               },
               "duration": {
                 "title": "소요기간",
-                "type": "integer"
+                "type": "number"
               },
               "note": {
                 "title": "비고",
@@ -362,11 +362,11 @@
               },
               "version": {
                 "title": "버전",
-                "type": "integer"
+                "type": "number"
               },
               "saved": {
                 "title": "저장됨",
-                "type": "integer"
+                "type": "number"
               },
               "shop": {
                 "title": "거래처",
@@ -418,7 +418,7 @@
                 },
                 "index": {
                   "title": "구성품 순번",
-                  "type": "string"
+                  "type": "number"
                 },
                 "name": {
                   "title": "구성품명",
@@ -430,11 +430,11 @@
                 },
                 "volume": {
                   "title": "권장량",
-                  "type": "integer"
+                  "type": "number"
                 },
                 "stock": {
                   "title": "재고",
-                  "type": "integer"
+                  "type": "number"
                 }
               },
               "required": [
