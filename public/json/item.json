@@ -44,10 +44,9 @@
         }
     },
     "contents": [{
-        "content_id": "",
-        "content_index": "",
-        "content_name": "",
-        "note": "",
+        "_id": "",
+        "index": "",
+        "name": "",
         "volume": 0,
         "stock": 0
     }],
@@ -66,38 +65,37 @@
             "supply_price": 0,
             "bidding_price": 0
         },
-        "contents": [{
-            "content_id": "",
-            "content_index": "",
-            "content_name": "",
+        "spec": {
+            "_id": "",
+            "spec_code": "",
+            "custom": false,
+            "description": "",
+            "width": "",
+            "height": "",
+            "depth": "",
+            "material": "",
+            "print": "",
+            "processing": "",
+            "cost": 0,
+            "duration": 0,
             "note": "",
-            "volume": 0,
-            "stock": 0,
-            "spec": {
-                "_id": "",
-                "spec_code": "",
-                "custom": false,
-                "description": "",
-                "width": "",
-                "height": "",
-                "depth": "",
-                "material": "",
-                "print": "",
-                "processing": "",
-                "cost": 0,
-                "duration": 0,
-                "note": "",
-                "version": 0,
-                "saved": 0,
-                "created_by": "",
-                "updated_by": "",
-                "created_at": "",
-                "updated_at": "",
-                "shop": {
-                    "shop_id": "",
-                    "shop_name": ""
-                }
+            "version": 0,
+            "saved": 0,
+            "created_by": "",
+            "updated_by": "",
+            "created_at": "",
+            "updated_at": "",
+            "shop": {
+                "shop_id": "",
+                "shop_name": ""
             }
+        },
+        "contents": [{
+            "_id": "",
+            "index": "",
+            "name": "",
+            "volume": 0,
+            "stock": 0
         }],
         "created_by": "",
         "created_at": ""
