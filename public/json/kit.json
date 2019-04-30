@@ -1,54 +1,72 @@
 {
     "kit_id": "",
-    "version": 0,
-    "basic_info": {
-        "kit_name": "",
-        "summary": "",
-        "description": {
-            "purpose": "",
-            "component": ""
-        },
-        "category": "",
-        "note": ""
-    },
+    "version": "",
+    "saved": 0,
     "created_by": "",
     "updated_by": "",
     "created_at": "",
     "updated_at": "",
-    "history": [{
-        "kit_version": 0,
+    "histories": [{
+        "history_id": "",
+        "version": "",
+        "saved": 0,
         "active": true,
         "created_by": "",
         "updated_by": "",
         "created_at": "",
         "updated_at": "",
-        "products": [{
-            "product_id": "",
-            "custom": false,
-            "product_version": 0,
+        "basic_info": {
+            "kit_name": "",
+            "summary": "",
+            "description_purpose": "",
+            "description_component": "",
+            "caution": "",
+            "category": "",
+            "note": ""
+        },
+        "items": [{
+            "item_id": "",
+            "version": "",
+            "saved": 0,
             "basic_info": {
-                "product_name": "",
+                "item_name": "",
+                "usage": "",
                 "category": "",
-                "description": ""
+                "image_name": "",
+                "note": "",
+                "custom": false,
+                "cost": 0,
+                "price": 0,
+                "supply_price": 0,
+                "bidding_price": 0
             },
             "spec": {
-                "size": "",
+                "_id": "",
+                "spec_code": "",
+                "custom": false,
+                "description": "",
+                "width": "",
+                "height": "",
+                "depth": "",
                 "material": "",
                 "print": "",
-                "processing": ""
-            },
-            "manufacture": {
-                "shop": "",
-                "duration": 0,
+                "processing": "",
                 "cost": 0,
-                "price": 0
+                "duration": 0,
+                "note": "",
+                "version": "",
+                "saved": 0,
+                "shop": {
+                    "shop_id": "",
+                    "shop_name": ""
+                }
             },
-            "items": [{
-                "item_id": "",
-                "item_name": "",
-                "logo_type": "",
+            "contents": [{
+                "_id": "",
+                "index": "",
+                "name": "",
                 "volume": 0,
-                "amount": 0
+                "stock": 0
             }]
         }]
     }]
