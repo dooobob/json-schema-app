@@ -146,7 +146,7 @@
         },
         "version": {
           "title": "버전",
-          "type": "number"
+          "type": "string"
         },
         "saved": {
           "title": "저장됨",
@@ -362,7 +362,7 @@
               },
               "version": {
                 "title": "버전",
-                "type": "number"
+                "type": "string"
               },
               "saved": {
                 "title": "저장됨",
