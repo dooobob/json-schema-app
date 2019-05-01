@@ -6,20 +6,58 @@
     "updated_at": "",
     "version": "",
     "saved": 0,
-    "histories": [{
+    "basic_info": {
+        "item_name": "",
+        "usage": "",
+        "category": "",
+        "image_name": "",
+        "note": "",
+        "custom": false,
+        "cost": 0,
+        "price": 0,
+        "supply_price": 0,
+        "bidding_price": 0
+    },
+    "spec": {
         "_id": "",
+        "spec_code": "",
+        "custom": false,
+        "description": "",
+        "width": "",
+        "height": "",
+        "depth": "",
+        "material": "",
+        "print": "",
+        "processing": "",
+        "cost": 0,
+        "duration": 0,
+        "note": "",
+        "version": 0,
+        "saved": 0,
         "created_by": "",
         "updated_by": "",
         "created_at": "",
         "updated_at": "",
+        "shop": {
+            "shop_id": "",
+            "shop_name": ""
+        }
+    },
+    "contents": [{
+        "_id": "",
+        "index": "",
+        "name": "",
+        "volume": 0,
+        "stock": 0
+    }],
+    "histories": [{
+        "_id": "",
         "version": "",
         "saved": 0,
-        "active": true,
         "basic_info": {
             "item_name": "",
             "usage": "",
             "category": "",
-            "image_name": "",
             "note": "",
             "custom": false,
             "cost": 0,
@@ -41,8 +79,12 @@
             "cost": 0,
             "duration": 0,
             "note": "",
-            "version": "",
+            "version": 0,
             "saved": 0,
+            "created_by": "",
+            "updated_by": "",
+            "created_at": "",
+            "updated_at": "",
             "shop": {
                 "shop_id": "",
                 "shop_name": ""
@@ -54,6 +96,8 @@
             "name": "",
             "volume": 0,
             "stock": 0
-        }]
+        }],
+        "created_by": "",
+        "created_at": ""
     }]
 }

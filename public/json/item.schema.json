@@ -3,11 +3,11 @@
   "type": "object",
   "properties": {
     "item_id": {
-      "title": "품목 아이디",
+      "title": "품목 id",
       "type": "string"
     },
     "created_by": {
-      "title": "생성자",
+      "title": "작성자",
       "type": "string"
     },
     "updated_by": {
@@ -15,7 +15,7 @@
       "type": "string"
     },
     "created_at": {
-      "title": "생성일시",
+      "title": "작성일시",
       "type": "string"
     },
     "updated_at": {
@@ -27,33 +27,220 @@
       "type": "string"
     },
     "saved": {
-      "title": "저장수",
-      "type": "integer"
+      "title": "저장됨",
+      "type": "number"
     },
-    "histories": {
-      "title": "히스토리",
+    "basic_info": {
+      "type": "object",
+      "title": "기본정보",
+      "properties": {
+        "item_name": {
+          "title": "품목명",
+          "type": "string"
+        },
+        "usage": {
+          "title": "사용유형",
+          "type": "string"
+        },
+        "category": {
+          "title": "카테고리",
+          "type": "string"
+        },
+        "image_name": {
+          "title": "이미지명",
+          "type": "string"
+        },
+        "note": {
+          "title": "메모",
+          "type": "string"
+        },
+        "custom": {
+          "title": "커스텀",
+          "type": "boolean"
+        },
+        "cost": {
+          "title": "제작단가",
+          "type": "number"
+        },
+        "price": {
+          "title": "판매가",
+          "type": "number"
+        },
+        "supply_price": {
+          "title": "납품가",
+          "type": "number"
+        },
+        "bidding_price": {
+          "title": "입찰가",
+          "type": "number"
+        }
+      },
+      "required": [
+        "item_name",
+        "usage",
+        "category",
+        "image_name",
+        "note",
+        "custom",
+        "cost",
+        "price",
+        "supply_price",
+        "bidding_price"
+      ]
+    },
+    "spec": {
+      "title": "제품사양",
+      "type": "object",
+      "properties": {
+        "_id": {
+          "title": "object id",
+          "type": "string"
+        },
+        "spec_code": {
+          "title": "spec code",
+          "type": "string"
+        },
+        "custom": {
+          "title": "커스텀",
+          "type": "boolean"
+        },
+        "description": {
+          "title": "설명",
+          "type": "string"
+        },
+        "width": {
+          "title": "가로",
+          "type": "string"
+        },
+        "height": {
+          "title": "세로",
+          "type": "string"
+        },
+        "depth": {
+          "title": "높이",
+          "type": "string"
+        },
+        "material": {
+          "title": "재질",
+          "type": "string"
+        },
+        "print": {
+          "title": "인쇄",
+          "type": "string"
+        },
+        "processing": {
+          "title": "가공",
+          "type": "string"
+        },
+        "cost": {
+          "title": "제작단가",
+          "type": "number"
+        },
+        "duration": {
+          "title": "소요기간",
+          "type": "number"
+        },
+        "note": {
+          "title": "비고",
+          "type": "string"
+        },
+        "version": {
+          "title": "버전",
+          "type": "number"
+        },
+        "saved": {
+          "title": "저장됨",
+          "type": "number"
+        },
+        "shop": {
+          "title": "거래처",
+          "type": "object",
+          "properties": {
+            "shop_id": {
+              "title": "거래처 id",
+              "type": "string"
+            },
+            "shop_name": {
+              "title": "거래처 이름",
+              "type": "string"
+            }
+          },
+          "required": [
+            "shop_id",
+            "shop_name"
+          ]
+        }
+      },
+      "required": [
+        "_id",
+        "spec_code",
+        "custom",
+        "description",
+        "width",
+        "height",
+        "depth",
+        "material",
+        "print",
+        "processing",
+        "cost",
+        "duration",
+        "note",
+        "version",
+        "saved",
+        "shop"
+      ]
+    },
+    "contents": {
+      "title": "구성품 목록",
       "type": "array",
       "items": [{
+        "title": "구성품",
         "type": "object",
         "properties": {
           "_id": {
-            "title": "히스토리 아이디",
+            "title": "구성품 id",
             "type": "string"
           },
-          "created_by": {
-            "title": "생성자",
+          "index": {
+            "title": "구성품 순번",
+            "type": "number"
+          },
+          "name": {
+            "title": "구성품명",
             "type": "string"
           },
-          "updated_by": {
-            "title": "수정자",
+          "note": {
+            "title": "특이사항",
             "type": "string"
           },
-          "created_at": {
-            "title": "생성일시",
-            "type": "string"
+          "volume": {
+            "title": "권장량",
+            "type": "number"
           },
-          "updated_at": {
-            "title": "수정일시",
+          "stock": {
+            "title": "재고",
+            "type": "number"
+          }
+        },
+        "required": [
+          "_id",
+          "index",
+          "name",
+          "note",
+          "volume",
+          "stock"
+        ]
+      }]
+    },
+    "histories": {
+      "title": "히스토리 목록",
+      "type": "array",
+      "items": [{
+        "title": "히스토리",
+        "type": "object",
+        "properties": {
+          "_id": {
+            "title": "히스토리 id",
             "type": "string"
           },
           "version": {
@@ -61,12 +248,8 @@
             "type": "string"
           },
           "saved": {
-            "title": "저장수",
-            "type": "integer"
-          },
-          "active": {
-            "title": "활성화",
-            "type": "boolean"
+            "title": "저장됨",
+            "type": "number"
           },
           "basic_info": {
             "title": "기본정보",
@@ -84,10 +267,6 @@
                 "title": "카테고리",
                 "type": "string"
               },
-              "image_name": {
-                "title": "이미지명",
-                "type": "string"
-              },
               "note": {
                 "title": "메모",
                 "type": "string"
@@ -98,26 +277,25 @@
               },
               "cost": {
                 "title": "제작단가",
-                "type": "integer"
+                "type": "number"
               },
               "price": {
                 "title": "판매가",
-                "type": "integer"
+                "type": "number"
               },
               "supply_price": {
                 "title": "납품가",
-                "type": "integer"
+                "type": "number"
               },
               "bidding_price": {
                 "title": "입찰가",
-                "type": "integer"
+                "type": "number"
               }
             },
             "required": [
               "item_name",
               "usage",
               "category",
-              "image_name",
               "note",
               "custom",
               "cost",
@@ -131,11 +309,11 @@
             "type": "object",
             "properties": {
               "_id": {
-                "title": "제품사양 아이디",
+                "title": "object id",
                 "type": "string"
               },
               "spec_code": {
-                "title": "제품사양 코드",
+                "title": "spec code",
                 "type": "string"
               },
               "custom": {
@@ -172,11 +350,11 @@
               },
               "cost": {
                 "title": "제작단가",
-                "type": "integer"
+                "type": "number"
               },
               "duration": {
                 "title": "소요기간",
-                "type": "integer"
+                "type": "number"
               },
               "note": {
                 "title": "비고",
@@ -184,11 +362,11 @@
               },
               "version": {
                 "title": "버전",
-                "type": "string"
+                "type": "number"
               },
               "saved": {
-                "title": "저장수",
-                "type": "integer"
+                "title": "저장됨",
+                "type": "number"
               },
               "shop": {
                 "title": "거래처",
@@ -199,7 +377,7 @@
                     "type": "string"
                   },
                   "shop_name": {
-                    "title": "거래처명",
+                    "title": "거래처 이름",
                     "type": "string"
                   }
                 },
@@ -229,53 +407,64 @@
             ]
           },
           "contents": {
-            "title": "구성품 목록",
+            "title": "구성품",
             "type": "array",
             "items": [{
               "type": "object",
               "properties": {
-                "_id": {
-                  "title": "구성품 아이디",
+                "id": {
+                  "title": "구성품 id",
                   "type": "string"
                 },
                 "index": {
                   "title": "구성품 순번",
-                  "type": "string"
+                  "type": "number"
                 },
                 "name": {
                   "title": "구성품명",
                   "type": "string"
                 },
+                "note": {
+                  "title": "특이사항",
+                  "type": "string"
+                },
                 "volume": {
                   "title": "권장량",
-                  "type": "integer"
+                  "type": "number"
                 },
                 "stock": {
                   "title": "재고",
-                  "type": "integer"
+                  "type": "number"
                 }
               },
               "required": [
                 "_id",
                 "index",
                 "name",
+                "note",
                 "volume",
                 "stock"
               ]
             }]
+          },
+          "created_by": {
+            "title": "작성자",
+            "type": "string"
+          },
+          "created_at": {
+            "title": "작성일시",
+            "type": "string"
           }
         },
         "required": [
           "_id",
-          "created_by",
-          "updated_by",
-          "created_at",
-          "updated_at",
           "version",
           "saved",
           "basic_info",
           "spec",
-          "contents"
+          "contents",
+          "created_by",
+          "created_at"
         ]
       }]
     }
@@ -287,7 +476,9 @@
     "created_at",
     "updated_at",
     "version",
-    "saved",
+    "basic_info",
+    "spec",
+    "contents",
     "histories"
   ]
 }
