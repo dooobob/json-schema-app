@@ -17,8 +17,8 @@
         "cost": 0,
         "price": 0,
         "supply_price": 0,
-        "bidding_price": 0
-
+        "bidding_price": 0,
+        "duration": 0
     },
     "items": [{
         "item_id": "",

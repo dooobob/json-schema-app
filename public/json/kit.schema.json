@@ -77,6 +77,10 @@
         "bidding_price": {
           "title": "입찰가",
           "type": "integer"
+        },
+        "duration": {
+          "title": "제작기간",
+          "type": "integer"
         }
       },
       "required": [
@@ -90,7 +94,8 @@
         "cost",
         "price",
         "supply_price",
-        "bidding_price"
+        "bidding_price",
+        "duration"
       ]
     },
     "items": {
@@ -369,6 +374,26 @@
               },
               "note": {
                 "type": "string"
+              },
+              "cost": {
+                "title": "제작단가",
+                "type": "integer"
+              },
+              "price": {
+                "title": "판매가",
+                "type": "integer"
+              },
+              "supply_price": {
+                "title": "납품가",
+                "type": "integer"
+              },
+              "bidding_price": {
+                "title": "입찰가",
+                "type": "integer"
+              },
+              "duration": {
+                "title": "제작기간",
+                "type": "integer"
               }
             },
             "required": [
@@ -378,7 +403,11 @@
               "description_component",
               "caution",
               "category",
-              "note"
+              "note",
+              "cost",
+              "price",
+              "supply_price",
+              "bidding_price"
             ]
           },
           "items": {
