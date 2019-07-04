@@ -1,103 +1,46 @@
 {
-    "item_id": "",
+    "_id": "",
+    "ori_id": "",
     "created_by": "",
     "updated_by": "",
     "created_at": "",
     "updated_at": "",
-    "version": "",
+    "version": 0,
     "saved": 0,
+    "latest": false,
+    "active": false,
     "basic_info": {
         "item_name": "",
-        "usage": "",
-        "category": "",
-        "image_name": "",
-        "note": "",
-        "custom": false,
+        "distinction": "",
+        "classification": "",
+        "type": "",
         "cost": 0,
         "price": 0,
-        "supply_price": 0,
-        "bidding_price": 0
-    },
-    "spec": {
-        "_id": "",
-        "spec_code": "",
-        "custom": false,
-        "description": "",
-        "width": "",
-        "height": "",
-        "depth": "",
-        "material": "",
-        "print": "",
-        "processing": "",
-        "cost": 0,
-        "duration": 0,
-        "note": "",
-        "version": "",
-        "saved": 0,
-        "created_by": "",
-        "updated_by": "",
-        "created_at": "",
-        "updated_at": "",
+        "file_name": "",
+        "location": "",
         "shop": {
             "shop_id": "",
             "shop_name": ""
         }
     },
-    "contents": [{
+    "components": [{
         "_id": "",
-        "index": "",
-        "name": "",
+        "component_name": "",
         "volume": 0,
-        "stock": 0
-    }],
-    "histories": [{
-        "_id": "",
-        "version": "",
-        "saved": 0,
-        "basic_info": {
-            "item_name": "",
-            "usage": "",
-            "category": "",
-            "note": "",
-            "custom": false,
-            "cost": 0,
-            "price": 0,
-            "supply_price": 0,
-            "bidding_price": 0
-        },
+        "quantity": 0,
+        "stock": 0,
+        "demand": 0,
+        "order": 0,
+        "size": "",
+        "note": "",
         "spec": {
-            "_id": "",
+            "spec_id": "",
             "spec_code": "",
-            "custom": false,
-            "description": "",
-            "width": "",
-            "height": "",
-            "depth": "",
+            "classification_code": "",
+            "code_index": 0,
             "material": "",
             "print": "",
-            "processing": "",
-            "cost": 0,
-            "duration": 0,
-            "note": "",
-            "version": "",
-            "saved": 0,
-            "created_by": "",
-            "updated_by": "",
-            "created_at": "",
-            "updated_at": "",
-            "shop": {
-                "shop_id": "",
-                "shop_name": ""
-            }
-        },
-        "contents": [{
-            "_id": "",
-            "index": "",
-            "name": "",
-            "volume": 0,
-            "stock": 0
-        }],
-        "created_by": "",
-        "created_at": ""
+            "processing": ""
+        }
     }]
 }

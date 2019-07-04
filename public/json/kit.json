@@ -1,131 +1,58 @@
 {
-    "kit_id": "",
-    "version": "",
-    "saved": 0,
+    "_id": "",
+    "ori_id": "",
     "created_by": "",
     "updated_by": "",
     "created_at": "",
     "updated_at": "",
+    "version": 0,
+    "saved": 0,
+    "latest": false,
+    "active": false,
     "basic_info": {
         "kit_name": "",
-        "summary": "",
-        "description_purpose": "",
-        "description_component": "",
-        "caution": "",
-        "category": "",
+        "classification": "",
         "note": "",
         "cost": 0,
         "price": 0,
-        "supply_price": 0,
-        "bidding_price": 0,
-        "duration": 0
+        "wholesale_price": 0,
+        "bidding_price": 0
     },
     "items": [{
         "item_id": "",
-        "version": "",
+        "ori_id": "",
+        "version": 0,
         "saved": 0,
         "basic_info": {
             "item_name": "",
-            "usage": "",
-            "category": "",
-            "image_name": "",
-            "note": "",
-            "custom": false,
+            "distinction": "",
+            "classification": "",
+            "type": "",
             "cost": 0,
             "price": 0,
-            "supply_price": 0,
-            "bidding_price": 0
-        },
-        "spec": {
-            "_id": "",
-            "spec_code": "",
-            "custom": false,
-            "description": "",
-            "width": "",
-            "height": "",
-            "depth": "",
-            "material": "",
-            "print": "",
-            "processing": "",
-            "cost": 0,
-            "duration": 0,
-            "note": "",
-            "version": "",
-            "saved": 0,
+            "file_name": "",
             "shop": {
                 "shop_id": "",
                 "shop_name": ""
             }
         },
-        "contents": [{
-            "_id": "",
-            "index": "",
-            "name": "",
+        "components": [{
+            "component_id": "",
+            "component_name": "",
             "volume": 0,
-            "stock": 0
-        }]
-    }],
-    "histories": [{
-        "history_id": "",
-        "version": "",
-        "saved": 0,
-        "created_by": "",
-        "updated_by": "",
-        "created_at": "",
-        "updated_at": "",
-        "basic_info": {
-            "kit_name": "",
-            "summary": "",
-            "description_purpose": "",
-            "description_component": "",
-            "caution": "",
-            "category": "",
-            "note": ""
-        },
-        "items": [{
-            "item_id": "",
-            "version": "",
-            "saved": 0,
-            "basic_info": {
-                "item_name": "",
-                "usage": "",
-                "category": "",
-                "image_name": "",
-                "note": "",
-                "custom": false,
-                "cost": 0,
-                "price": 0,
-                "supply_price": 0,
-                "bidding_price": 0
-            },
+            "quantity": 0,
+            "stock": 0,
+            "size": "",
+            "note": "",
             "spec": {
-                "_id": "",
+                "spec_id": "",
                 "spec_code": "",
-                "custom": false,
-                "description": "",
-                "width": "",
-                "height": "",
-                "depth": "",
+                "classification_code": "",
+                "code_index": 0,
                 "material": "",
                 "print": "",
-                "processing": "",
-                "cost": 0,
-                "duration": 0,
-                "note": "",
-                "version": "",
-                "saved": 0,
-                "shop": {
-                    "shop_id": "",
-                    "shop_name": ""
-                }
-            },
-            "contents": [{
-                "_id": "",
-                "index": "",
-                "name": "",
-                "volume": 0,
-                "stock": 0
-            }]
+                "processing": ""
+            }
         }]
     }]
 }
