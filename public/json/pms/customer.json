@@ -1,0 +1,21 @@
+{
+    "_id": "",
+    "created_by": "",
+    "updated_by": "",
+    "created_at": "",
+    "updated_at": "",
+    "customer_name": "",
+    "department": "",
+    "classification": "",
+    "organization": "",
+    "post_code": "",
+    "address_main": "",
+    "address_sub": "",
+    "description": "",
+    "contact_type": "",
+    "managers": [{
+        "name": "",
+        "phone": "",
+        "email": ""
+    }]
+}

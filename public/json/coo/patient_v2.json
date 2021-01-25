@@ -1,0 +1,99 @@
+{
+    "type": "",
+    "id": 0,
+    "triage": {
+        "start": "",
+        "salt": ""
+    },
+    "gender": false,
+    "age": 0,
+    "nationality": "",
+    "can": {
+        "walk": false,
+        "move": true,
+        "breath": true
+    },
+    "injury": [{
+        "part": 4.1,
+        "injury": 3,
+        "degree": 5
+    }],
+    "breath_kind": 1,
+    "symptoms": [{
+        "cc": 13
+    }],
+    "aid_answer": [
+        "aLB1a",
+        "aLB1b"
+    ],
+    "pain_scale": 9,
+    "diagnosis": {
+        "respiration_rate": 32,
+        "bp_sp": 70,
+        "bp_dp": 40,
+        "pulse": 130,
+        "oxygen": 88,
+        "temperature": 35.9
+    },
+    "response": {
+        "eye_opening": 4,
+        "verbal": 5,
+        "motor": 6
+    },
+    "gcs_score": 15,
+    "gcs": "",
+    "avpu": "",
+    "patient_name": "",
+    "patient_weight": 0,
+    "skin_tone": 0,
+    "hair_tone": 0,
+    "hair_color": "",
+    "hair_id": "",
+    "cloth_cut": [false, false, false, false, false, false, false, false, false],
+    "cloth_style": 0,
+    "cloth_type": 0,
+    "found_time": 0,
+    "name_check": false,
+    "injury_check": [false, false, false],
+    "aid_history": [{
+        "aid_id": "",
+        "time": 0,
+        "practiced_by": ""
+    }],
+    "triage_history": [{
+        "method": "",
+        "value": "",
+        "time": 0,
+        "practiced_by": ""
+    }],
+    "user_response": {
+        "eye_opening": 4,
+        "verbal": 5,
+        "motor": 6
+    },
+    "check_level": -1,
+    "turnaround_time": 0,
+    "is_revive": false,
+    "eye_left": {
+        "size": 0,
+        "shape": 0,
+        "reaction_type": 0
+    },
+    "eye_right": {
+        "size": 0,
+        "shape": 0,
+        "reaction_type": 0
+    },
+    "my_eye_left": {
+        "size": 0,
+        "shape": 0,
+        "reaction_type": 0
+    },
+    "my_eye_right": {
+        "size": 0,
+        "shape": 0,
+        "reaction_type": 0
+    },
+    "motor_power": "",
+    "user_motor_power": ""
+}

@@ -1,0 +1,66 @@
+{
+    "location": "",
+    "accident": "",
+    "casualties_count": 0,
+    "select_triage_type": "",
+    "triage_accuracy": 0.0,
+    "aid_accuracy": 0.0,
+    "aid_priority": 0.0,
+    "aid_perfect": false,
+    "full_feedback": {
+        "a": {
+            "full_aid_count": 0,
+            "bad_aid_count": 0,
+            "details": [""]
+        },
+        "b": {
+            "full_aid_count": 0,
+            "bad_aid_count": 0,
+            "details": [""]
+        },
+        "c": {
+            "full_aid_count": 0,
+            "bad_aid_count": 0,
+            "details": [""]
+        },
+        "d": {
+            "full_aid_count": 0,
+            "bad_aid_count": 0,
+            "details": [""]
+        },
+        "e": {
+            "full_aid_count": 0,
+            "bad_aid_count": 0,
+            "details": [""]
+        }
+    },
+    "patient_feedbacks": [{
+        "good_triage": "",
+        "selected_triage": "",
+        "aid_time": 0,
+        "name": "",
+        "gender": "",
+        "age": 0.0,
+        "bad_aid_count": 0,
+        "a": [{
+            "type": "",
+            "detail": ""
+        }],
+        "b": [{
+            "type": "",
+            "detail": ""
+        }],
+        "c": [{
+            "type": "",
+            "detail": ""
+        }],
+        "d": [{
+            "type": "",
+            "detail": ""
+        }],
+        "e": [{
+            "type": "",
+            "detail": ""
+        }]
+    }]
+}

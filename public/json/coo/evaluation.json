@@ -1,0 +1,107 @@
+{
+    "location": "",
+    "accident": "",
+    "casualties_count": 0,
+    "select_triage_type": "",
+    "triage_accuracy": 0.0,
+    "aid_accuracy": 0.0,
+    "aid_priority": 0.0,
+    "aid_perfect": false,
+    "full_feedback": {
+        "a": {
+            "full_aid_count": 0,
+            "bad_aid_count": 0,
+            "details": {
+                "ko": [""],
+                "en": [""]
+            }
+        },
+        "b": {
+            "full_aid_count": 0,
+            "bad_aid_count": 0,
+            "details": {
+                "ko": [""],
+                "en": [""]
+            }
+        },
+        "c": {
+            "full_aid_count": 0,
+            "bad_aid_count": 0,
+            "details": {
+                "ko": [""],
+                "en": [""]
+            }
+        },
+        "d": {
+            "full_aid_count": 0,
+            "bad_aid_count": 0,
+            "details": {
+                "ko": [""],
+                "en": [""]
+            }
+        },
+        "e": {
+            "full_aid_count": 0,
+            "bad_aid_count": 0,
+            "details": {
+                "ko": [""],
+                "en": [""]
+            }
+        }
+    },
+    "patient_feedbacks": [{
+        "good_triage": "",
+        "selected_triage": "",
+        "aid_time": 0,
+        "name": "",
+        "gender": "",
+        "age": 0.0,
+        "bad_aid_count": 0,
+        "comment": {
+            "ko": {
+                "a": [{
+                    "type": "",
+                    "detail": ""
+                }],
+                "b": [{
+                    "type": "",
+                    "detail": ""
+                }],
+                "c": [{
+                    "type": "",
+                    "detail": ""
+                }],
+                "d": [{
+                    "type": "",
+                    "detail": ""
+                }],
+                "e": [{
+                    "type": "",
+                    "detail": ""
+                }]
+            },
+            "en": {
+                "a": [{
+                    "type": "",
+                    "detail": ""
+                }],
+                "b": [{
+                    "type": "",
+                    "detail": ""
+                }],
+                "c": [{
+                    "type": "",
+                    "detail": ""
+                }],
+                "d": [{
+                    "type": "",
+                    "detail": ""
+                }],
+                "e": [{
+                    "type": "",
+                    "detail": ""
+                }]
+            }
+        }
+    }]
+}

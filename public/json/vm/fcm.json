@@ -1,0 +1,16 @@
+{
+    "_id": "",
+    "title": "",
+    "content": "",
+    "target": "",
+    "target_users": [""],
+    "start_at": 0,
+    "end_at": 0,
+    "repeat": false,
+    "status": 0,
+    "created_by_nickname": "",
+    "created_by": "",
+    "created_at": 0,
+    "updated_by": "",
+    "updated_at": 0
+}

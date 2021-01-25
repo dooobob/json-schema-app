@@ -1,0 +1,76 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "log",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "_id": {
+      "title": "로그 id",
+      "description": "",
+      "type": "string"
+    },
+    "type": {
+      "title": "type",
+      "description": "in:true, out:false",
+      "type": "boolean"
+    },
+    "requested_by": {
+      "title": "요청자",
+      "description": "",
+      "type": "string"
+    },
+    "requested_at": {
+      "title": "요청일시",
+      "description": "",
+      "type": "string"
+    },
+    "responsed_at": {
+      "title": "응답일시",
+      "description": "",
+      "type": "string"
+    },
+    "method": {
+      "title": "요청 method",
+      "description": "",
+      "type": "string"
+    },
+    "url": {
+      "title": "요청 url",
+      "description": "",
+      "type": "string"
+    },
+    "body": {
+      "title": "req body",
+      "description": "",
+      "type": "string"
+    },
+    "data": {
+      "title": "res data",
+      "description": "",
+      "type": "string"
+    },
+    "error": {
+      "title": "error",
+      "description": "",
+      "type": "string"
+    },
+    "result": {
+      "title": "결과",
+      "description": "",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "_id",
+    "type",
+    "requested_by",
+    "requested_at",
+    "responsed_at",
+    "method",
+    "url",
+    "body",
+    "data",
+    "error",
+    "result"
+  ]
+}

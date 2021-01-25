@@ -1,0 +1,43 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "origin": {
+            "title": "기관",
+            "type": "string"
+        },
+        "user_id": {
+            "title": "사용자 아이디",
+            "type": "string"
+        },
+        "user_email": {
+            "title": "사용자 이메일",
+            "type": "string"
+        },
+        "user_name": {
+            "title": "사용자 이름",
+            "type": "string"
+        },
+        "created_at": {
+            "title": "링크 생성일시",
+            "type": "integer"
+        },
+        "accessed_at": {
+            "title": "접근 일시",
+            "type": "integer"
+        },
+        "signed_at": {
+            "title": "로그인 일시",
+            "type": "integer"
+        }
+    },
+    "required": [
+        "origin",
+        "user_id",
+        "user_email",
+        "user_name",
+        "created_at",
+        "accessed_at",
+        "signed_at"
+    ]
+}

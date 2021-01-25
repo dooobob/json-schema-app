@@ -1,0 +1,82 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "_id": {
+            "title": "푸시 아이디",
+            "type": "string"
+        },
+        "title": {
+            "title": "제목",
+            "type": "string"
+        },
+        "content": {
+            "title": "내용",
+            "type": "string"
+        },
+        "target": {
+            "title": "대상",
+            "type": "string"
+        },
+        "target_users": {
+            "title": "대상 사용자",
+            "type": "array",
+            "items": [{
+                "title": "사용자 이메일",
+                "type": "string"
+            }]
+        },
+        "start_at": {
+            "title": "시작일시",
+            "type": "integer"
+        },
+        "end_at": {
+            "title": "종료일시",
+            "type": "integer"
+        },
+        "repeat": {
+            "title": "반복",
+            "type": "boolean"
+        },
+        "status": {
+            "title": "상태",
+            "type": "integer"
+        },
+        "created_by_nickname": {
+            "title": "작성자 nickname",
+            "type": "string"
+        },
+        "created_by": {
+            "title": "작성자",
+            "type": "string"
+        },
+        "created_at": {
+            "title": "작성일시",
+            "type": "integer"
+        },
+        "updated_by": {
+            "title": "수정자",
+            "type": "string"
+        },
+        "updated_at": {
+            "title": "수정일시",
+            "type": "integer"
+        }
+    },
+    "required": [
+        "_id",
+        "title",
+        "content",
+        "target",
+        "target_users",
+        "start_at",
+        "end_at",
+        "repeat",
+        "status",
+        "created_by_nickname",
+        "created_by",
+        "created_at",
+        "updated_by",
+        "updated_at"
+    ]
+}

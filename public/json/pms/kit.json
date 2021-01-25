@@ -11,10 +11,12 @@
     "active": false,
     "basic_info": {
         "kit_name": "",
-        "classification": "",
+        "distinction": "",
+        "classification": [],
         "note": "",
         "cost": 0,
         "price": 0,
+        "quantity": 1,
         "wholesale_price": 0,
         "bidding_price": 0
     },
@@ -30,7 +32,11 @@
             "type": "",
             "cost": 0,
             "price": 0,
+            "quantity": 0,
             "file_name": "",
+            "file_url": "",
+            "location": "",
+            "note": "",
             "shop": {
                 "shop_id": "",
                 "shop_name": ""

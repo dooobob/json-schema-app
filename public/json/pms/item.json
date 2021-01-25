@@ -16,8 +16,12 @@
         "type": "",
         "cost": 0,
         "price": 0,
+        "quantity": 1,
         "file_name": "",
+        "file_url": "",
         "location": "",
+        "note": "",
+        "check": "",
         "shop": {
             "shop_id": "",
             "shop_name": ""

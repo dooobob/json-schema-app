@@ -1,0 +1,101 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "title": {
+            "title": "제목",
+            "type": "string"
+        },
+        "description": {
+            "title": "강좌소개",
+            "type": "string"
+        },
+        "aim": {
+            "title": "학습목표",
+            "type": "string"
+        },
+        "target": {
+            "title": "학습대상",
+            "type": "string"
+        },
+        "completion_requirement": {
+            "title": "수료기준",
+            "type": "string"
+        },
+        "topics": {
+            "title": "토픽",
+            "type": "array",
+            "items": [{
+                "type": "object",
+                "properties": {
+                    "lessons": {
+                        "title": "강의",
+                        "type": "array",
+                        "items": [{
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "title": "강의 제목",
+                                    "type": "string"
+                                },
+                                "type": {
+                                    "title": "강의 형식",
+                                    "type": "string",
+                                    "description": "video, scenario"
+                                },
+                                "time": {
+                                    "title": "소요 시간",
+                                    "type": "integer"
+                                },
+                                "detail": {
+                                    "title": "동영상url/시나리오타입",
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "type",
+                                "time",
+                                "detail"
+                            ]
+                        }]
+                    }
+                },
+                "required": [
+                    "lessons"
+                ]
+            }]
+        },
+        "thumb_path": {
+            "title": "썸네일",
+            "type": "string"
+        },
+        "img_path": {
+            "title": "이미지경로",
+            "type": "string"
+        },
+        "time": {
+            "title": "학습 소요시간",
+            "type": "integer"
+        },
+        "created_at": {
+            "title": "등록일시",
+            "type": "integer"
+        },
+        "approval_time": {
+            "title": "이수시간",
+            "type": "string"
+        }
+    },
+    "required": [
+        "title",
+        "description",
+        "aim",
+        "target",
+        "completion_requirement",
+        "topics",
+        "img_path",
+        "time",
+        "created_at"
+    ]
+}

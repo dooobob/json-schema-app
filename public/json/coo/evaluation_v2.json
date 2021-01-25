@@ -1,0 +1,71 @@
+{
+    "location": "",
+    "accident": "",
+    "casualties_count": 0,
+    "select_triage_type": "",
+    "triage_accuracy": 0.0,
+    "aid_accuracy": 0.0,
+    "aid_priority": 0.0,
+    "aid_perfect": false,
+    "over_triage": 0,
+    "under_triage": 0,
+    "gcs_accuracy": 0.0,
+    "gcs_correct": 0,
+    "pupil_reaction_accuracy": 0.0,
+    "pupil_reaction_correct": 0,
+    "motor_power_accuracy": 0.0,
+    "motor_powercorrect": 0,
+    "patient_feedbacks": [{
+        "good_triage": "",
+        "selected_triage": "",
+        "good_gcs": {
+            "eye_opening": 4,
+            "verbal": 5,
+            "motor": 6
+        },
+        "selected_gcs": {
+            "eye_opening": 4,
+            "verbal": 5,
+            "motor": 6
+        },
+        "aid_time": 0,
+        "triage_time": 0,
+        "found_time": 0,
+        "name": "",
+        "gender": "",
+        "age": 0.0,
+        "injury": [{
+            "part": 4.1,
+            "injury": 3,
+            "degree": 5
+        }],
+        "comment_codes": [],
+        "comment_replacement": "",
+        "good_pupil_reaction": {
+            "eye_left": {
+                "size": 0,
+                "shape": 0,
+                "reaction_type": 0
+            },
+            "eye_right": {
+                "size": 0,
+                "shape": 0,
+                "reaction_type": 0
+            }
+        },
+        "selected_pupil_reaction": {
+            "eye_left": {
+                "size": 0,
+                "shape": 0,
+                "reaction_type": 0
+            },
+            "eye_right": {
+                "size": 0,
+                "shape": 0,
+                "reaction_type": 0
+            }
+        },
+        "good_motor_power": "",
+        "selected_motor_power": ""
+    }]
+}

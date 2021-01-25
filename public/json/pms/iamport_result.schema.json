@@ -1,0 +1,38 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "_id": {
+            "title": "아이디",
+            "type": "string"
+        },
+        "created_at": {
+            "title": "생성일시",
+            "type": "string"
+        },
+        "request_time": {
+            "title": "요청일시",
+            "type": "string"
+        },
+        "imp_uid": {
+            "title": "아임포트 결제 아이디",
+            "type": "string"
+        },
+        "sales_id": {
+            "title": "주문번호",
+            "type": "string"
+        },
+        "status": {
+            "title": "상태",
+            "type": "string"
+        }
+    },
+    "required": [
+        "_id",
+        "created_at",
+        "request_time",
+        "imp_uid",
+        "sales_id",
+        "status"
+    ]
+}

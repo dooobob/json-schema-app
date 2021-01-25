@@ -1,0 +1,477 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "type": {
+            "title": "환자타입",
+            "type": "string"
+        },
+        "id": {
+            "title": "환자번호",
+            "type": "integer"
+        },
+        "triage": {
+            "title": "트리아지 정답",
+            "type": "object",
+            "properties": {
+                "start": {
+                    "title": "START",
+                    "type": "string"
+                },
+                "salt": {
+                    "title": "SALT",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "start",
+                "salt"
+            ]
+        },
+        "gender": {
+            "title": "성별",
+            "description": "male:true, female:false",
+            "type": "boolean"
+        },
+        "age": {
+            "title": "나이",
+            "type": "number"
+        },
+        "nationality": {
+            "title": "국적",
+            "type": "string"
+        },
+        "can": {
+            "title": "환자상태",
+            "type": "object",
+            "properties": {
+                "walk": {
+                    "title": "보행여부",
+                    "type": "boolean"
+                },
+                "move": {
+                    "title": "반응여부",
+                    "type": "boolean"
+                },
+                "breath": {
+                    "title": "호흡여부",
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "walk",
+                "move",
+                "breath"
+            ]
+        },
+        "injury": {
+            "title": "환자 손상정보",
+            "type": "array",
+            "items": [{
+                "title": "손상 데이터",
+                "type": "object",
+                "properties": {
+                    "part": {
+                        "title": "손상부위",
+                        "type": "number"
+                    },
+                    "injury": {
+                        "title": "손상 아이디",
+                        "type": "integer"
+                    },
+                    "degree": {
+                        "title": "손상정도",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "part",
+                    "injury",
+                    "degree"
+                ]
+            }]
+        },
+        "breath_kind": {
+            "title": "호흡종류",
+            "type": "integer"
+        },
+        "symptoms": {
+            "title": "증상",
+            "type": "array",
+            "items": [{
+                "title": "주호소",
+                "type": "object",
+                "properties": {
+                    "cc": {
+                        "title": "아이디",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "cc"
+                ]
+            }]
+        },
+        "aid_answer": {
+            "title": "처치 정답 목록",
+            "type": "array",
+            "items": [{
+                "title": "처치 정답",
+                "type": "string"
+            }]
+        },
+        "pain_scale": {
+            "title": "고통 정도",
+            "type": "integer"
+        },
+        "diagnosis": {
+            "title": "바이탈 정보",
+            "type": "object",
+            "properties": {
+                "respiration_rate": {
+                    "title": "호흡",
+                    "type": "integer"
+                },
+                "bp_sp": {
+                    "title": "수축기혈압",
+                    "type": "integer"
+                },
+                "bp_dp": {
+                    "title": "이완기혈압",
+                    "type": "integer"
+                },
+                "pulse": {
+                    "title": "맥박",
+                    "type": "integer"
+                },
+                "oxygen": {
+                    "title": "산소포화도",
+                    "type": "integer"
+                },
+                "temperature": {
+                    "title": "체온",
+                    "type": "number"
+                }
+            },
+            "required": [
+                "respiration_rate",
+                "bp_sp",
+                "bp_dp",
+                "pulse",
+                "oxygen",
+                "temperature"
+            ]
+        },
+        "response": {
+            "title": "반응여부",
+            "type": "object",
+            "properties": {
+                "eye_opening": {
+                    "title": "개안반응",
+                    "type": "integer"
+                },
+                "verbal": {
+                    "title": "언어반응",
+                    "type": "integer"
+                },
+                "motor": {
+                    "title": "운동반응",
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "eye_opening",
+                "verbal",
+                "motor"
+            ]
+        },
+        "gcs_score": {
+            "title": "gcs 점수",
+            "type": "integer"
+        },
+        "gcs": {
+            "title": "gcs 평가",
+            "type": "string"
+        },
+        "avpu": {
+            "title": "avpu 평가",
+            "type": "string"
+        },
+        "patient_name": {
+            "title": "환자이름",
+            "type": "string"
+        },
+        "patient_weight": {
+            "title": "환자 몸무게",
+            "type": "integer"
+        },
+        "skin_tone": {
+            "title": "skin tone",
+            "type": "integer"
+        },
+        "hair_tone": {
+            "title": "hair tone",
+            "type": "integer"
+        },
+        "hair_color": {
+            "title": "머리 색상",
+            "type": "string"
+        },
+        "hair_id": {
+            "title": "머리 색상",
+            "type": "string"
+        },
+        "cloth_cut": {
+            "title": "의상 절개",
+            "type": "array",
+            "items": [{
+                "title": "부위",
+                "type": "boolean"
+            }]
+        },
+        "cloth_style": {
+            "title": "cloth style",
+            "type": "integer"
+        },
+        "cloth_type": {
+            "title": "cloth type",
+            "type": "integer"
+        },
+        "found_time": {
+            "title": "발견시간",
+            "type": "integer"
+        },
+        "name_check": {
+            "title": "이름확인",
+            "type": "boolean"
+        },
+        "injury_check": {
+            "title": "손상 확인",
+            "type": "array",
+            "items": [{
+                "title": "손상",
+                "type": "boolean"
+            }]
+        },
+        "aid_history": {
+            "title": "처치데이터",
+            "type": "array",
+            "items": [{
+                "title": "처치",
+                "type": "object",
+                "properties": {
+                    "aid_id": {
+                        "title": "처치아이디",
+                        "type": "string"
+                    },
+                    "time": {
+                        "title": "처치시간",
+                        "type": "integer"
+                    },
+                    "practiced_by": {
+                        "title": "처치한 사용자",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "aid_id",
+                    "time",
+                    "practiced_by"
+                ]
+            }]
+        },
+        "triage_history": {
+            "title": "트리아지 데이터",
+            "type": "array",
+            "items": [{
+                "title": "트리아지",
+                "type": "object",
+                "properties": {
+                    "method": {
+                        "title": "방법",
+                        "description": "mass, start, salt",
+                        "type": "string"
+                    },
+                    "value": {
+                        "title": "선택값",
+                        "description": "R, Y, G, B",
+                        "type": "string"
+                    },
+                    "time": {
+                        "title": "분류시간",
+                        "type": "integer"
+                    },
+                    "practiced_by": {
+                        "title": "분류한 사용자",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "value",
+                    "method",
+                    "time",
+                    "practiced_by"
+                ]
+            }]
+        },
+        "user_response": {
+            "title": "반응여부",
+            "type": "object",
+            "properties": {
+                "eye_opening": {
+                    "title": "개안반응",
+                    "type": "integer"
+                },
+                "verbal": {
+                    "title": "언어반응",
+                    "type": "integer"
+                },
+                "motor": {
+                    "title": "운동반응",
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "eye_opening",
+                "verbal",
+                "motor"
+            ]
+        },
+        "check_level": {
+            "title": "환자 체크 단계",
+            "type": "integer"
+        },
+        "turnaround_time": {
+            "title": "환자 상세화면 확인 소요시간",
+            "type": "number"
+        },
+        "is_revive": {
+            "title": "부활",
+            "type": "boolean"
+        },
+        "eye_left": {
+            "title": "왼쪽눈",
+            "type": "object",
+            "properties": {
+                "size": {
+                    "title": "크기",
+                    "type": "integer"
+                },
+                "shape": {
+                    "title": "모양",
+                    "type": "integer",
+                    "description": "0:Round, 1:Ovoid, 2:Irregular"
+                },
+                "reaction_type": {
+                    "title": "반응",
+                    "type": "integer",
+                    "description": "0:Prompt, 1:Sluggish, 2:Fixed, 3:Hippus"
+                }
+            }
+        },
+        "eye_right": {
+            "title": "오른쪽눈",
+            "type": "object",
+            "properties": {
+                "size": {
+                    "title": "크기",
+                    "type": "integer"
+                },
+                "shape": {
+                    "title": "모양",
+                    "type": "integer",
+                    "description": "0:Round, 1:Ovoid, 2:Irregular"
+                },
+                "reaction_type": {
+                    "title": "반응",
+                    "type": "integer",
+                    "description": "0:Prompt, 1:Sluggish, 2:Fixed, 3:Hippus"
+                }
+            }
+        },
+        "my_eye_left": {
+            "title": "왼쪽눈 플레이",
+            "type": "object",
+            "properties": {
+                "size": {
+                    "title": "크기",
+                    "type": "integer"
+                },
+                "shape": {
+                    "title": "모양",
+                    "type": "integer",
+                    "description": "0:Round, 1:Ovoid, 2:Irregular"
+                },
+                "reaction_type": {
+                    "title": "반응",
+                    "type": "integer",
+                    "description": "0:Prompt, 1:Sluggish, 2:Fixed, 3:Hippus"
+                }
+            }
+        },
+        "my_eye_right": {
+            "title": "오른쪽눈 플레이",
+            "type": "object",
+            "properties": {
+                "size": {
+                    "title": "크기",
+                    "type": "integer"
+                },
+                "shape": {
+                    "title": "모양",
+                    "type": "integer",
+                    "description": "0:Round, 1:Ovoid, 2:Irregular"
+                },
+                "reaction_type": {
+                    "title": "반응",
+                    "type": "integer",
+                    "description": "0:Prompt, 1:Sluggish, 2:Fixed, 3:Hippus"
+                }
+            }
+        },
+        "motor_power": {
+            "title": "근력사정",
+            "type": "string",
+            "description": "왼팔/왼다리/오르팔/오른다리"
+        },
+        "user_motor_power": {
+            "title": "근력사정 플레이",
+            "type": "string",
+            "description": "왼팔/왼다리/오르팔/오른다리"
+        }
+    },
+    "required": [
+        "type",
+        "id",
+        "triage",
+        "gender",
+        "age",
+        "nationality",
+        "can",
+        "injury",
+        "breath_kind",
+        "symptoms",
+        "aid_answer",
+        "pain_scale",
+        "diagnosis",
+        "response",
+        "gcs_score",
+        "gcs",
+        "avpu",
+        "found_time",
+        "patient_name",
+        "patient_weight",
+        "skin_tone",
+        "hair_tone",
+        "cloth_colors",
+        "hair_color",
+        "hair_id",
+        "diagnosis_check",
+        "aid_history",
+        "triage_history",
+        "user_response",
+        "check_level",
+        "turnaround_time",
+        "is_revive"
+    ]
+}

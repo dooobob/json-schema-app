@@ -1,0 +1,81 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "_id": {
+            "title": "공지사항 아이디",
+            "type": "string"
+        },
+        "title": {
+            "title": "제목",
+            "type": "string"
+        },
+        "content": {
+            "title": "내용",
+            "type": "string"
+        },
+        "description": {
+            "title": "내용 요약",
+            "type": "string"
+        },
+        "target": {
+            "title": "노출영역",
+            "type": "string"
+        },
+        "start_at": {
+            "title": "공지시작일시",
+            "type": "integer"
+        },
+        "end_at": {
+            "title": "공지종료일시",
+            "type": "integer"
+        },
+        "status": {
+            "title": "상태",
+            "type": "integer",
+            "description": "0:deactive, 1:active"
+        },
+        "view_cnt": {
+            "title": "조회수",
+            "type": "integer"
+        },
+        "created_by_nicname": {
+            "title": "작성자 닉네임",
+            "type": "string",
+            "description": "vm_user.nickname"
+        },
+        "created_by": {
+            "title": "작성자",
+            "type": "string",
+            "description": "vm_user.user_email"
+        },
+        "created_at": {
+            "title": "작성일시",
+            "type": "integer"
+        },
+        "updated_by": {
+            "title": "수정자",
+            "type": "string"
+        },
+        "updated_at": {
+            "title": "수정일시",
+            "type": "integer"
+        }
+    },
+    "required": [
+        "_id",
+        "title",
+        "content",
+        "description",
+        "target",
+        "start_at",
+        "end_at",
+        "status",
+        "view_cnt",
+        "created_by_nicname",
+        "created_by",
+        "created_at",
+        "updated_by",
+        "updated_at"
+    ]
+}

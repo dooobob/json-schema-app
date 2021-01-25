@@ -1,0 +1,508 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "location": {
+            "title": "사고위치",
+            "type": "string"
+        },
+        "accident": {
+            "title": "사고상황",
+            "type": "string"
+        },
+        "casualties_count": {
+            "title": "사상자 수",
+            "type": "integer"
+        },
+        "select_triage_type": {
+            "title": "트리아지 타입",
+            "type": "string"
+        },
+        "triage_accuracy": {
+            "title": "분류 정확도 점수",
+            "type": "number"
+        },
+        "aid_accuracy": {
+            "title": "처치 적합성 점수",
+            "type": "number"
+        },
+        "aid_priority": {
+            "title": "처치 우선도 점수",
+            "type": "number"
+        },
+        "aid_perfect": {
+            "title": "처치 만점 여부",
+            "type": "boolean"
+        },
+        "full_feedback": {
+            "title": "전체평가",
+            "type": "object",
+            "properties": {
+                "a": {
+                    "type": "object",
+                    "properties": {
+                        "full_aid_count": {
+                            "title": "전체 처치수",
+                            "type": "integer"
+                        },
+                        "bad_aid_count": {
+                            "title": "부적합 처치수",
+                            "type": "integer"
+                        },
+                        "details": {
+                            "title": "상세설명",
+                            "type": "object",
+                            "properties": {
+                                "ko": {
+                                    "title": "한국어",
+                                    "type": "array",
+                                    "items": [{
+                                        "title": "설명",
+                                        "type": "string"
+                                    }]
+                                },
+                                "en": {
+                                    "title": "영어",
+                                    "type": "array",
+                                    "items": [{
+                                        "title": "설명",
+                                        "type": "string"
+                                    }]
+                                }
+                            }
+                        }
+                    },
+                    "required": [
+                        "full_aid_count",
+                        "bad_aid_count",
+                        "details"
+                    ]
+                },
+                "b": {
+                    "type": "object",
+                    "properties": {
+                        "full_aid_count": {
+                            "type": "integer"
+                        },
+                        "bad_aid_count": {
+                            "type": "integer"
+                        },
+                        "details": {
+                            "title": "상세설명",
+                            "type": "object",
+                            "properties": {
+                                "ko": {
+                                    "title": "한국어",
+                                    "type": "array",
+                                    "items": [{
+                                        "title": "설명",
+                                        "type": "string"
+                                    }]
+                                },
+                                "en": {
+                                    "title": "영어",
+                                    "type": "array",
+                                    "items": [{
+                                        "title": "설명",
+                                        "type": "string"
+                                    }]
+                                }
+                            }
+                        }
+                    },
+                    "required": [
+                        "full_aid_count",
+                        "bad_aid_count",
+                        "details"
+                    ]
+                },
+                "c": {
+                    "type": "object",
+                    "properties": {
+                        "full_aid_count": {
+                            "type": "integer"
+                        },
+                        "bad_aid_count": {
+                            "type": "integer"
+                        },
+                        "details": {
+                            "title": "상세설명",
+                            "type": "object",
+                            "properties": {
+                                "ko": {
+                                    "title": "한국어",
+                                    "type": "array",
+                                    "items": [{
+                                        "title": "설명",
+                                        "type": "string"
+                                    }]
+                                },
+                                "en": {
+                                    "title": "영어",
+                                    "type": "array",
+                                    "items": [{
+                                        "title": "설명",
+                                        "type": "string"
+                                    }]
+                                }
+                            }
+                        }
+                    },
+                    "required": [
+                        "full_aid_count",
+                        "bad_aid_count",
+                        "details"
+                    ]
+                },
+                "d": {
+                    "type": "object",
+                    "properties": {
+                        "full_aid_count": {
+                            "type": "integer"
+                        },
+                        "bad_aid_count": {
+                            "type": "integer"
+                        },
+                        "details": {
+                            "title": "상세설명",
+                            "type": "object",
+                            "properties": {
+                                "ko": {
+                                    "title": "한국어",
+                                    "type": "array",
+                                    "items": [{
+                                        "title": "설명",
+                                        "type": "string"
+                                    }]
+                                },
+                                "en": {
+                                    "title": "영어",
+                                    "type": "array",
+                                    "items": [{
+                                        "title": "설명",
+                                        "type": "string"
+                                    }]
+                                }
+                            }
+                        }
+                    },
+                    "required": [
+                        "full_aid_count",
+                        "bad_aid_count",
+                        "details"
+                    ]
+                },
+                "e": {
+                    "type": "object",
+                    "properties": {
+                        "full_aid_count": {
+                            "type": "integer"
+                        },
+                        "bad_aid_count": {
+                            "type": "integer"
+                        },
+                        "details": {
+                            "title": "상세설명",
+                            "type": "object",
+                            "properties": {
+                                "ko": {
+                                    "title": "한국어",
+                                    "type": "array",
+                                    "items": [{
+                                        "title": "설명",
+                                        "type": "string"
+                                    }]
+                                },
+                                "en": {
+                                    "title": "영어",
+                                    "type": "array",
+                                    "items": [{
+                                        "title": "설명",
+                                        "type": "string"
+                                    }]
+                                }
+                            }
+                        }
+                    },
+                    "required": [
+                        "full_aid_count",
+                        "bad_aid_count",
+                        "details"
+                    ]
+                }
+            },
+            "required": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e"
+            ]
+        },
+        "patient_feedbacks": {
+            "title": "환자평가",
+            "type": "array",
+            "items": [{
+                "type": "object",
+                "properties": {
+                    "good_triage": {
+                        "title": "적합분류(정답)",
+                        "type": "string"
+                    },
+                    "selected_triage": {
+                        "title": "선택한분류",
+                        "type": "string"
+                    },
+                    "aid_time": {
+                        "title": "처음 처치한 시각",
+                        "type": "integer"
+                    },
+                    "name": {
+                        "title": "환자이름",
+                        "type": "string"
+                    },
+                    "gender": {
+                        "title": "환자성별",
+                        "type": "string"
+                    },
+                    "age": {
+                        "title": "환자나이",
+                        "type": "number"
+                    },
+                    "bad_aid_count": {
+                        "title": "전체부적합처치수(각각 배열 길이의 합)",
+                        "type": "integer"
+                    },
+                    "comments": {
+                        "title": "코멘트",
+                        "type": "object",
+                        "properties": {
+                            "ko": {
+                                "title": "한국어",
+                                "type": "object",
+                                "properties": {
+                                    "a": {
+                                        "type": "array",
+                                        "items": [{
+                                            "type": "object",
+                                            "properties": {
+                                                "type": {
+                                                    "title": "피드백종류(처치오류, 처치과잉, 처치누락, 의료지도누락)",
+                                                    "type": "string"
+                                                },
+                                                "detail": {
+                                                    "title": "상세설명",
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "required": [
+                                                "type",
+                                                "detail"
+                                            ]
+                                        }]
+                                    },
+                                    "b": {
+                                        "type": "array",
+                                        "items": [{
+                                            "type": "object",
+                                            "properties": {
+                                                "type": {
+                                                    "type": "string"
+                                                },
+                                                "detail": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "required": [
+                                                "type",
+                                                "detail"
+                                            ]
+                                        }]
+                                    },
+                                    "c": {
+                                        "type": "array",
+                                        "items": [{
+                                            "type": "object",
+                                            "properties": {
+                                                "type": {
+                                                    "type": "string"
+                                                },
+                                                "detail": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "required": [
+                                                "type",
+                                                "detail"
+                                            ]
+                                        }]
+                                    },
+                                    "d": {
+                                        "type": "array",
+                                        "items": [{
+                                            "type": "object",
+                                            "properties": {
+                                                "type": {
+                                                    "type": "string"
+                                                },
+                                                "detail": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "required": [
+                                                "type",
+                                                "detail"
+                                            ]
+                                        }]
+                                    },
+                                    "e": {
+                                        "type": "array",
+                                        "items": [{
+                                            "type": "object",
+                                            "properties": {
+                                                "type": {
+                                                    "type": "string"
+                                                },
+                                                "detail": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "required": [
+                                                "type",
+                                                "detail"
+                                            ]
+                                        }]
+                                    }
+                                }
+                            },
+                            "en": {
+                                "title": "영어",
+                                "type": "object",
+                                "properties": {
+                                    "a": {
+                                        "type": "array",
+                                        "items": [{
+                                            "type": "object",
+                                            "properties": {
+                                                "type": {
+                                                    "title": "피드백종류(처치오류, 처치과잉, 처치누락, 의료지도누락)",
+                                                    "type": "string"
+                                                },
+                                                "detail": {
+                                                    "title": "상세설명",
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "required": [
+                                                "type",
+                                                "detail"
+                                            ]
+                                        }]
+                                    },
+                                    "b": {
+                                        "type": "array",
+                                        "items": [{
+                                            "type": "object",
+                                            "properties": {
+                                                "type": {
+                                                    "type": "string"
+                                                },
+                                                "detail": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "required": [
+                                                "type",
+                                                "detail"
+                                            ]
+                                        }]
+                                    },
+                                    "c": {
+                                        "type": "array",
+                                        "items": [{
+                                            "type": "object",
+                                            "properties": {
+                                                "type": {
+                                                    "type": "string"
+                                                },
+                                                "detail": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "required": [
+                                                "type",
+                                                "detail"
+                                            ]
+                                        }]
+                                    },
+                                    "d": {
+                                        "type": "array",
+                                        "items": [{
+                                            "type": "object",
+                                            "properties": {
+                                                "type": {
+                                                    "type": "string"
+                                                },
+                                                "detail": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "required": [
+                                                "type",
+                                                "detail"
+                                            ]
+                                        }]
+                                    },
+                                    "e": {
+                                        "type": "array",
+                                        "items": [{
+                                            "type": "object",
+                                            "properties": {
+                                                "type": {
+                                                    "type": "string"
+                                                },
+                                                "detail": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "required": [
+                                                "type",
+                                                "detail"
+                                            ]
+                                        }]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "required": [
+                    "good_triage",
+                    "selected_triage",
+                    "aid_time",
+                    "name",
+                    "gender",
+                    "age",
+                    "bad_aid_count",
+                    "a",
+                    "b",
+                    "c",
+                    "d",
+                    "e"
+                ]
+            }]
+        }
+    },
+    "required": [
+        "location",
+        "accident",
+        "casualties_count",
+        "select_triage_type",
+        "triage_accuracy",
+        "aid_accuracy",
+        "aid_priority",
+        "aid_perfect",
+        "full_feedback",
+        "patient_feedbacks"
+    ]
+}

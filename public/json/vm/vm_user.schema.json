@@ -1,0 +1,92 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "_id": {
+            "title": "아이디",
+            "type": "string"
+        },
+        "user_email": {
+            "title": "이메일",
+            "type": "string"
+        },
+        "user_pw": {
+            "title": "패스워드",
+            "type": "string"
+        },
+        "user_level": {
+            "title": "사용자 등급",
+            "type": "integer"
+        },
+        "user_name": {
+            "title": "이름",
+            "type": "string"
+        },
+        "company": {
+            "title": "회사/기관",
+            "type": "string"
+        },
+        "department": {
+            "title": "부서",
+            "type": "string"
+        },
+        "profile_img_path": {
+            "title": "프로필 이미지 경로",
+            "type": "string"
+        },
+        "created_at": {
+            "title": "생성일시",
+            "type": "integer"
+        },
+        "updated_at": {
+            "title": "수정일시",
+            "type": "integer"
+        },
+        "closed_at": {
+            "title": "탈퇴일시",
+            "type": "integer"
+        },
+        "salt": {
+            "title": "소금",
+            "type": "string"
+        },
+        "tmp_pw": {
+            "title": "임시 비밀번호",
+            "type": "string"
+        },
+        "auth": {
+            "title": "인증",
+            "type": "object",
+            "properties": {
+                "token": {
+                    "title": "토큰",
+                    "type": "string"
+                },
+                "updated_at": {
+                    "title": "업데이트 일시",
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "token",
+                "updated_at"
+            ]
+        }
+    },
+    "required": [
+        "_id",
+        "user_email",
+        "user_pw",
+        "user_level",
+        "user_name",
+        "company",
+        "department",
+        "profile_img_path",
+        "created_at",
+        "updated_at",
+        "closed_at",
+        "salt",
+        "tmp_pw",
+        "auth"
+    ]
+}

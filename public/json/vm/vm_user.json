@@ -1,0 +1,19 @@
+{
+    "_id": "",
+    "user_email": "",
+    "user_pw": "",
+    "user_level": 0,
+    "user_name": "",
+    "company": "",
+    "department": "",
+    "profile_img_path": "",
+    "created_at": 0,
+    "updated_at": 0,
+    "closed_at": 0,
+    "salt": "",
+    "tmp_pw": "",
+    "auth": {
+        "token": "",
+        "updated_at": 0
+    }
+}

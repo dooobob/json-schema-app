@@ -1,0 +1,323 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "location": {
+            "title": "사고위치",
+            "type": "string"
+        },
+        "accident": {
+            "title": "사고상황",
+            "type": "string"
+        },
+        "casualties_count": {
+            "title": "사상자 수",
+            "type": "integer"
+        },
+        "select_triage_type": {
+            "title": "트리아지 타입",
+            "type": "string"
+        },
+        "triage_accuracy": {
+            "title": "분류 정확도 점수",
+            "type": "number"
+        },
+        "aid_accuracy": {
+            "title": "처치 적합성 점수",
+            "type": "number"
+        },
+        "aid_priority": {
+            "title": "처치 우선도 점수",
+            "type": "number"
+        },
+        "aid_perfect": {
+            "title": "처치 만점 여부",
+            "type": "boolean"
+        },
+        "over_triage": {
+            "title": "상향분류수",
+            "type": "integer"
+        },
+        "under_triage": {
+            "title": "하향분류수",
+            "type": "integer"
+        },
+        "gcs_accuracy": {
+            "title": "gcs 정확도 점수",
+            "type": "number"
+        },
+        "gcs_correct": {
+            "title": "gcs 정답수",
+            "type": "integer"
+        },
+        "pupil_reaction_accuracy": {
+            "title": "동공반응 정확도 점수",
+            "type": "number"
+        },
+        "pupil_reaction_correct": {
+            "title": "동공반응 정답수",
+            "type": "integer"
+        },
+        "motor_power_accuracy": {
+            "title": "근력사정 정확도 점수",
+            "type": "number"
+        },
+        "motor_power_correct": {
+            "title": "근력사정 정답수",
+            "type": "integer"
+        },
+        "patient_feedbacks": {
+            "title": "환자평가",
+            "type": "array",
+            "items": [{
+                "type": "object",
+                "properties": {
+                    "good_triage": {
+                        "title": "적합분류(정답)",
+                        "type": "string"
+                    },
+                    "selected_triage": {
+                        "title": "선택한분류",
+                        "type": "string"
+                    },
+                    "good_gcs": {
+                        "title": "반응여부",
+                        "type": "object",
+                        "properties": {
+                            "eye_opening": {
+                                "title": "개안반응",
+                                "type": "integer"
+                            },
+                            "verbal": {
+                                "title": "언어반응",
+                                "type": "integer"
+                            },
+                            "motor": {
+                                "title": "운동반응",
+                                "type": "integer"
+                            }
+                        },
+                        "required": [
+                            "eye_opening",
+                            "verbal",
+                            "motor"
+                        ]
+                    },
+                    "selected_gcs": {
+                        "title": "반응여부",
+                        "type": "object",
+                        "properties": {
+                            "eye_opening": {
+                                "title": "개안반응",
+                                "type": "integer"
+                            },
+                            "verbal": {
+                                "title": "언어반응",
+                                "type": "integer"
+                            },
+                            "motor": {
+                                "title": "운동반응",
+                                "type": "integer"
+                            }
+                        },
+                        "required": [
+                            "eye_opening",
+                            "verbal",
+                            "motor"
+                        ]
+                    },
+                    "aid_time": {
+                        "title": "처음 처치한 시각",
+                        "type": "integer"
+                    },
+                    "triage_time": {
+                        "title": "처음 분류 시간",
+                        "type": "integer"
+                    },
+                    "found_time": {
+                        "title": "발견 시간",
+                        "type": "integer"
+                    },
+                    "name": {
+                        "title": "환자이름",
+                        "type": "string"
+                    },
+                    "gender": {
+                        "title": "환자성별",
+                        "type": "string"
+                    },
+                    "age": {
+                        "title": "환자나이",
+                        "type": "number"
+                    },
+                    "injury": {
+                        "title": "환자 손상정보",
+                        "type": "array",
+                        "items": [{
+                            "title": "손상 데이터",
+                            "type": "object",
+                            "properties": {
+                                "part": {
+                                    "title": "손상부위",
+                                    "type": "number"
+                                },
+                                "injury": {
+                                    "title": "손상 아이디",
+                                    "type": "integer"
+                                },
+                                "degree": {
+                                    "title": "손상정도",
+                                    "type": "integer"
+                                }
+                            },
+                            "required": [
+                                "part",
+                                "injury",
+                                "degree"
+                            ]
+                        }]
+                    },
+                    "comment_codes": {
+                        "title": "코멘트 코드 목록",
+                        "type": "object",
+                        "items": [{
+                            "title": "코멘트 코드",
+                            "type": "string"
+                        }]
+                    },
+                    "comment_replacement": {
+                        "title": "코멘트 텍스트 수정 항목",
+                        "type": "string"
+                    },
+                    "good_pupil_reaction": {
+                        "title": "동공반응 정답",
+                        "type": "object",
+                        "properties": {
+                            "eye_left": {
+                                "title": "왼쪽눈",
+                                "type": "object",
+                                "properties": {
+                                    "size": {
+                                        "title": "크기",
+                                        "type": "integer"
+                                    },
+                                    "shape": {
+                                        "title": "모양",
+                                        "type": "integer",
+                                        "description": "0:Round, 1:Ovoid, 2:Irregular"
+                                    },
+                                    "reaction_type": {
+                                        "title": "반응",
+                                        "type": "integer",
+                                        "description": "0:Prompt, 1:Sluggish, 2:Fixed, 3:Hippus"
+                                    }
+                                }
+                            },
+                            "eye_right": {
+                                "title": "오른쪽눈",
+                                "type": "object",
+                                "properties": {
+                                    "size": {
+                                        "title": "크기",
+                                        "type": "integer"
+                                    },
+                                    "shape": {
+                                        "title": "모양",
+                                        "type": "integer",
+                                        "description": "0:Round, 1:Ovoid, 2:Irregular"
+                                    },
+                                    "reaction_type": {
+                                        "title": "반응",
+                                        "type": "integer",
+                                        "description": "0:Prompt, 1:Sluggish, 2:Fixed, 3:Hippus"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "selected_pupil_reaction": {
+                        "title": "동공반응 사용자 선택",
+                        "type": "object",
+                        "properties": {
+                            "eye_left": {
+                                "title": "왼쪽눈",
+                                "type": "object",
+                                "properties": {
+                                    "size": {
+                                        "title": "크기",
+                                        "type": "integer"
+                                    },
+                                    "shape": {
+                                        "title": "모양",
+                                        "type": "integer",
+                                        "description": "0:Round, 1:Ovoid, 2:Irregular"
+                                    },
+                                    "reaction_type": {
+                                        "title": "반응",
+                                        "type": "integer",
+                                        "description": "0:Prompt, 1:Sluggish, 2:Fixed, 3:Hippus"
+                                    }
+                                }
+                            },
+                            "eye_right": {
+                                "title": "오른쪽눈",
+                                "type": "object",
+                                "properties": {
+                                    "size": {
+                                        "title": "크기",
+                                        "type": "integer"
+                                    },
+                                    "shape": {
+                                        "title": "모양",
+                                        "type": "integer",
+                                        "description": "0:Round, 1:Ovoid, 2:Irregular"
+                                    },
+                                    "reaction_type": {
+                                        "title": "반응",
+                                        "type": "integer",
+                                        "description": "0:Prompt, 1:Sluggish, 2:Fixed, 3:Hippus"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "good_motor_power": {
+                        "title": "근력사정 정답",
+                        "type": "string"
+                    },
+                    "selected_motor_power": {
+                        "title": "근력사정 사용자 선택",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "good_triage",
+                    "selected_triage",
+                    "good_gcs",
+                    "selected_gcs",
+                    "aid_time",
+                    "name",
+                    "gender",
+                    "age",
+                    "injury",
+                    "comment_codes"
+                ]
+            }]
+        }
+    },
+    "required": [
+        "location",
+        "accident",
+        "casualties_count",
+        "select_triage_type",
+        "triage_accuracy",
+        "aid_accuracy",
+        "aid_priority",
+        "aid_perfect",
+        "over_triage",
+        "under_triage",
+        "gcs_accuracy",
+        "gcs_correct",
+        "patient_feedbacks"
+    ]
+}

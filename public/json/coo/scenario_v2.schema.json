@@ -1,0 +1,186 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "channel_num": {
+            "title": "채널 번호",
+            "type": "integer"
+        },
+        "created_by": {
+            "title": "생성자",
+            "type": "string"
+        },
+        "created_at": {
+            "title": "생성일시",
+            "type": "integer"
+        },
+        "updated_by": {
+            "title": "수정자",
+            "type": "string"
+        },
+        "updated_at": {
+            "title": "수정일시",
+            "type": "integer"
+        },
+        "single_mode": {
+            "title": "훈련모드",
+            "type": "boolean"
+        },
+        "scenario_name": {
+            "title": "방 이름",
+            "type": "string"
+        },
+        "location": {
+            "title": "사고위치",
+            "type": "string"
+        },
+        "accident": {
+            "title": "사고상황",
+            "type": "string"
+        },
+        "casualties_count": {
+            "title": "사상자수",
+            "type": "integer"
+        },
+        "scenario_state": {
+            "title": "시나리오상태",
+            "type": "string"
+        },
+        "playing_state": {
+            "title": "훈련상태",
+            "type": "boolean"
+        },
+        "play_time": {
+            "title": "진행시간",
+            "type": "integer"
+        },
+        "start_time": {
+            "title": "시작시간",
+            "type": "integer"
+        },
+        "end_time": {
+            "title": "종료시간",
+            "type": "integer"
+        },
+        "pause": {
+            "title": "멈춤",
+            "type": "array",
+            "items": [{
+                "time": {
+                    "title": "멈춤시간",
+                    "type": "integer"
+                }
+            }]
+        },
+        "resume": {
+            "title": "재시작",
+            "type": "array",
+            "items": [{
+                "time": {
+                    "title": "재시작시간",
+                    "type": "integer"
+                }
+            }]
+        },
+        "participants": {
+            "title": "참가자 목록",
+            "type": "array",
+            "items": [{
+                "title": "참가자",
+                "type": "object",
+                "properties": {
+                    "user_email": {
+                        "title": "사용자아이디",
+                        "type": "string"
+                    },
+                    "nickname": {
+                        "title": "별명",
+                        "type": "string"
+                    },
+                    "role": {
+                        "title": "역할",
+                        "type": "string"
+                    },
+                    "triage_method": {
+                        "title": "트리아지 방법",
+                        "type": "string"
+                    },
+                    "global_sorting": {
+                        "title": "글로벌 소팅",
+                        "type": "boolean"
+                    },
+                    "level": {
+                        "title": "참가자 권한",
+                        "type": "integer"
+                    },
+                    "evaluation": {
+                        "title": "평가 데이터",
+                        "type": "object"
+                    }
+                }
+            }]
+        },
+        "patients": {
+            "type": "array",
+            "title": "환자데이터",
+            "items": [{
+                "title": "환자",
+                "type": "string"
+            }]
+        },
+        "checked_patients": {
+            "type": "array",
+            "title": "트리아지 체크한 환자데이터",
+            "items": [{
+                "title": "환자인덱스",
+                "type": "integer"
+            }]
+        },
+        "noname_count_male": {
+            "title": "무명인 남자 수",
+            "type": "integer"
+        },
+        "noname_count_female": {
+            "title": "무명인 여자 수",
+            "type": "integer"
+        },
+        "patients_triage_count": {
+            "title": "환자 중증도 분류 수",
+            "properties": {
+                "red": {
+                    "title": "R",
+                    "type": "integer"
+                },
+                "yello": {
+                    "title": "Y",
+                    "type": "integer"
+                },
+                "green": {
+                    "title": "G",
+                    "type": "integer"
+                },
+                "black": {
+                    "title": "B",
+                    "type": "integer"
+                },
+                "gray": {
+                    "title": "A",
+                    "type": "integer"
+                }
+            }
+        },
+        "scenario_type": {
+            "title": "시나리오 종류",
+            "type": "string",
+            "description": "triage, gcs"
+        },
+        "demo": {
+            "title": "데모 여부",
+            "type": "boolean"
+        },
+        "map_name": {
+            "title": "map",
+            "type": "string"
+        }
+    }
+}

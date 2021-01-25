@@ -1,0 +1,73 @@
+{
+    "type": "",
+    "id": 0,
+    "triage": {
+        "mass": "",
+        "start": "",
+        "salt": ""
+    },
+    "gender": false,
+    "age": 0,
+    "nationality": "",
+    "can": {
+        "walk": false,
+        "move": true,
+        "breath": true
+    },
+    "injury": [{
+        "part": 4.1,
+        "injury": 3,
+        "degree": 5,
+        "tool": [""]
+    }],
+    "first_impression": {
+        "name": "",
+        "detail": ""
+    },
+    "breath_kind": 2,
+    "cause_injury": {
+        "name": "",
+        "detail": ""
+    },
+    "symptoms": [{
+        "cc": 13,
+        "tool": ["E1"]
+    }],
+    "pain_scale": 9,
+    "diagnosis": {
+        "respiration_rate": 32,
+        "bp_sp": 70,
+        "bp_dp": 40,
+        "pulse": 130,
+        "oxygen": 88,
+        "temperature": 35.9
+    },
+    "response": {
+        "eye_opening": 4,
+        "verbal": 5,
+        "motor": 6
+    },
+    "gcs_score": 15,
+    "gcs": "",
+    "avpu": "",
+    "vumark_id": 0,
+    "patient_name": "",
+    "cloth_colors": [""],
+    "hair_color": "",
+    "hair_id": "",
+    "diagnosis_check": [false],
+    "aid_history": [{
+        "aid_id": "",
+        "parts": 0,
+        "show_type": 0,
+        "tools": [""],
+        "time": 0,
+        "practiced_by": ""
+    }],
+    "triage_history": [{
+        "method": "",
+        "value": "",
+        "time": 0,
+        "practiced_by": ""
+    }]
+}

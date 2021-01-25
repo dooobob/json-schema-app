@@ -1,0 +1,67 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "user_id": {
+            "title": "사용자 아이디",
+            "type": "string"
+        },
+        "user_email": {
+            "title": "사용자 이메일",
+            "type": "string"
+        },
+        "ip_address": {
+            "title": "ip주소",
+            "type": "string"
+        },
+        "signin_with": {
+            "title": "로그인방법",
+            "type": "string"
+        },
+        "clientver": {
+            "title": "클라이언트버전",
+            "type": "string"
+        },
+        "devicetype": {
+            "title": "디바이스타입",
+            "type": "string"
+        },
+        "devicemodel": {
+            "title": "디바이스모델",
+            "type": "string"
+        },
+        "deviceos": {
+            "title": "os",
+            "type": "string"
+        },
+        "deviceuuid": {
+            "title": "uuid",
+            "type": "string"
+        },
+        "devicename": {
+            "title": "디바이스이름",
+            "type": "string"
+        },
+        "signin_at": {
+            "title": "로그인 시간",
+            "type": "integer"
+        },
+        "route": {
+            "title": "로그인경로",
+            "type": "string"
+        }
+    },
+    "required": [
+        "user_id",
+        "user_email",
+        "ip_address",
+        "clientver",
+        "devicetype",
+        "devicemodel",
+        "deviceos",
+        "deviceuuid",
+        "devicename",
+        "signin_at",
+        "route"
+    ]
+}

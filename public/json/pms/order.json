@@ -1,0 +1,25 @@
+{
+    "order_id": "",
+    "created_by": "",
+    "updated_by": "",
+    "created_at": "",
+    "updated_at": "",
+    "items": [{
+        "item_id": "",
+        "version": "",
+        "basic_info": {
+            "item_name": "",
+            "type": "",
+            "cost": 0,
+            "shop": {
+                "shop_id": "",
+                "shop_name": ""
+            }
+        },
+        "components": [{
+            "component_id": "",
+            "component_name": "",
+            "order": 0
+        }]
+    }]
+}

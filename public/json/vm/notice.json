@@ -1,0 +1,16 @@
+{
+    "_id": "",
+    "title": "",
+    "content": "",
+    "description": "",
+    "target": "",
+    "start_at": 0,
+    "end_at": 0,
+    "status": 0,
+    "view_cnt": 0,
+    "created_by_nickname": "",
+    "created_by": "",
+    "created_at": 0,
+    "updated_by": "",
+    "updated_at": 0
+}

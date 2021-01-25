@@ -1,0 +1,44 @@
+{
+    "_id": "",
+    "user_email": "",
+    "user_pw": "",
+    "user_level": 0,
+    "first_name": "",
+    "last_name": "",
+    "nickname": "",
+    "company": "",
+    "department": "",
+    "job_type": "",
+    "created_at": 0,
+    "updated_at": 0,
+    "certificated_at": 0,
+    "closed_at": 0,
+    "marketing_consent": 0,
+    "certification_confirmed": false,
+    "salt": "",
+    "tmp_pw": "",
+    "signup_type": "",
+    "triage_tutorial": "",
+    "oauth_uuid": "",
+    "visit": 0,
+    "license": "",
+    "profile_img_path": "",
+    "demo": false,
+    "notifications": [{
+        "_id": "",
+        "title": "",
+        "content": "",
+        "origin": "",
+        "origin_id": "",
+        "created_at": 0,
+        "view_at": 0
+    }],
+    "notice_views": [{
+        "notice_id": "",
+        "view_at": 0
+    }],
+    "auth": {
+        "token": "",
+        "updated_at": 0
+    }
+}

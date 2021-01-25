@@ -1,0 +1,125 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "order_id": {
+      "title": "주문id",
+      "type": "string"
+    },
+    "created_by": {
+      "title": "생성일시",
+      "type": "string"
+    },
+    "updated_by": {
+      "title": "수정일시",
+      "type": "string"
+    },
+    "created_at": {
+      "title": "생성자",
+      "type": "string"
+    },
+    "updated_at": {
+      "title": "수정자",
+      "type": "string"
+    },
+    "items": {
+      "title": "품목목록",
+      "type": "array",
+      "items": [{
+        "type": "object",
+        "properties": {
+          "item_id": {
+            "title": "품목아이디",
+            "type": "string"
+          },
+          "version": {
+            "title": "품목버전",
+            "type": "string"
+          },
+          "basic_info": {
+            "title": "품목 기본정보",
+            "type": "object",
+            "properties": {
+              "item_name": {
+                "title": "품목명",
+                "type": "string"
+              },
+              "type": {
+                "title": "품목타입",
+                "type": "string"
+              },
+              "cost": {
+                "title": "원가",
+                "type": "integer"
+              },
+              "shop": {
+                "title": "발주처",
+                "type": "object",
+                "properties": {
+                  "shop_id": {
+                    "title": "발주처아이디",
+                    "type": "string"
+                  },
+                  "shop_name": {
+                    "title": "발주처명",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "shop_id",
+                  "shop_name"
+                ]
+              }
+            },
+            "required": [
+              "item_name",
+              "type",
+              "cost",
+              "shop"
+            ]
+          },
+          "components": {
+            "title": "소품목",
+            "type": "array",
+            "items": [{
+              "type": "object",
+              "properties": {
+                "component_id": {
+                  "title": "소품목아이디",
+                  "type": "string"
+                },
+                "component_name": {
+                  "title": "소품목명",
+                  "type": "string"
+                },
+                "order": {
+                  "title": "주문수",
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "component_id",
+                "component_name",
+                "order"
+              ]
+            }]
+          }
+        },
+        "required": [
+          "item_id",
+          "version",
+          "basic_info",
+          "components"
+        ]
+      }]
+    }
+  },
+  "required": [
+    "order_id",
+    "created_by",
+    "updated_by",
+    "created_at",
+    "updated_at",
+    "items"
+  ]
+}

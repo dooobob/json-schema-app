@@ -50,8 +50,8 @@
           "title": "키트명",
           "type": "string"
         },
-        "classification": {
-          "title": "분류",
+        "distinction": {
+          "title": "구분",
           "type": "string"
         },
         "note": {
@@ -66,6 +66,10 @@
           "title": "판매가",
           "type": "integer"
         },
+        "quantity": {
+          "title": "수량",
+          "type": "integer"
+        },
         "wholesale_price": {
           "title": "도매가",
           "type": "integer"
@@ -73,17 +77,25 @@
         "bidding_price": {
           "title": "입찰가",
           "type": "integer"
+        },
+        "classification": {
+          "title": "분류",
+          "type": "array",
+          "items": [{
+            "title": "분류",
+            "type": "string"
+          }]
         }
       },
       "required": [
         "kit_name",
-        "classification",
+        "distinction",
         "note",
         "cost",
         "price",
         "wholesale_price",
         "bidding_price",
-        "location"
+        "classification"
       ]
     },
     "items": {
@@ -136,8 +148,24 @@
                 "title": "판매단가",
                 "type": "integer"
               },
+              "quantity": {
+                "title": "세트수",
+                "type": "integer"
+              },
               "file_name": {
                 "title": "파일명",
+                "type": "string"
+              },
+              "file_url": {
+                "title": "파일 url",
+                "type": "string"
+              },
+              "location": {
+                "title": "위치",
+                "type": "string"
+              },
+              "note": {
+                "title": "메모",
                 "type": "string"
               },
               "shop": {
@@ -166,7 +194,11 @@
               "type",
               "cost",
               "price",
+              "quantity",
               "file_name",
+              "file_url",
+              "location",
+              "note",
               "shop"
             ]
           },

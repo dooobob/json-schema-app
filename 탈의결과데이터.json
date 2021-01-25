@@ -1,0 +1,102 @@
+{
+    "Level": "Level D",
+    "PPEPlayType": 1,
+    "StartTime": 1593113422348,
+    "FinishTime": 1593113515463,
+    "Reseults": [
+        {
+            "Step": "손위생",
+            "Result": 1
+        },
+        {
+            "Step": "소독티슈",
+            "Result": 1
+        },
+        {
+            "Step": "Protective_Legs_02",
+            "Result": 1
+        },
+        {
+            "Step": "손위생",
+            "Result": 1
+        },
+        {
+            "Step": "Protective_Arms_02",
+            "Result": 1
+        },
+        {
+            "Step": "Protective_Arms_02",
+            "Result": 1
+        },
+        {
+            "Step": "손위생",
+            "Result": 1
+        },
+        {
+            "Step": "Protective_Cloth_03",
+            "Result": 1
+        },
+        {
+            "Step": "Protective_Cloth_03",
+            "Result": 1
+        },
+        {
+            "Step": "Head",
+            "Result": 1
+        },
+        {
+            "Step": "Head",
+            "Result": 1
+        },
+        {
+            "Step": "Head",
+            "Result": 1
+        },
+        {
+            "Step": "Head",
+            "Result": 1
+        },
+        {
+            "Step": "손위생",
+            "Result": 1
+        },
+        {
+            "Step": "Goggles",
+            "Result": 1
+        },
+        {
+            "Step": "Goggles",
+            "Result": 1
+        },
+        {
+            "Step": "손위생",
+            "Result": 1
+        },
+        {
+            "Step": "Mask",
+            "Result": 1
+        },
+        {
+            "Step": "Mask",
+            "Result": 1
+        },
+        {
+            "Step": "손위생",
+            "Result": 1
+        },
+        {
+            "Step": "Protective_Arms_00",
+            "Result": 1
+        },
+        {
+            "Step": "Protective_Arms_00",
+            "Result": 1
+        },
+        {
+            "Step": "손위생",
+            "Result": 1
+        }
+    ],
+    "PassCount": 23,
+    "ErrorCount": 0
+}

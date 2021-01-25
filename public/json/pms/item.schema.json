@@ -70,12 +70,28 @@
           "title": "판매단가",
           "type": "integer"
         },
+        "quantity": {
+          "title": "세트수",
+          "type": "integer"
+        },
         "file_name": {
           "title": "파일명",
           "type": "string"
         },
+        "file_url": {
+          "title": "url",
+          "type": "string"
+        },
         "location": {
           "title": "위치",
+          "type": "string"
+        },
+        "note": {
+          "title": "메모",
+          "type": "string"
+        },
+        "check": {
+          "title": "검수",
           "type": "string"
         },
         "shop": {
@@ -104,8 +120,12 @@
         "type",
         "cost",
         "price",
+        "quantity",
         "file_name",
+        "file_url",
         "location",
+        "note",
+        "check",
         "shop"
       ]
     },

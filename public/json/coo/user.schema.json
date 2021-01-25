@@ -1,0 +1,207 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "_id": {
+            "title": "아이디",
+            "type": "string"
+        },
+        "user_email": {
+            "title": "이메일",
+            "type": "string"
+        },
+        "user_pw": {
+            "title": "패스워드",
+            "type": "string"
+        },
+        "user_level": {
+            "title": "사용자 등급",
+            "type": "integer"
+        },
+        "first_name": {
+            "title": "이름",
+            "type": "string"
+        },
+        "last_name": {
+            "title": "성",
+            "type": "string"
+        },
+        "nickname": {
+            "title": "별명",
+            "type": "string"
+        },
+        "company": {
+            "title": "회사/기관",
+            "type": "string"
+        },
+        "department": {
+            "title": "부서",
+            "type": "string"
+        },
+        "job_type": {
+            "title": "직군",
+            "type": "string"
+        },
+        "created_at": {
+            "title": "생성일시",
+            "type": "integer"
+        },
+        "updated_at": {
+            "title": "수정일시",
+            "type": "integer"
+        },
+        "certificated_at": {
+            "title": "인증일시",
+            "type": "integer"
+        },
+        "closed_at": {
+            "title": "탈퇴일시",
+            "type": "integer"
+        },
+        "marketing_consent": {
+            "title": "마케팅수신동의",
+            "type": "integer"
+        },
+        "certification_confirmed": {
+            "title": "인증최초확인",
+            "type": "boolean"
+        },
+        "salt": {
+            "title": "소금",
+            "type": "string"
+        },
+        "tmp_pw": {
+            "title": "임시 비밀번호",
+            "type": "string"
+        },
+        "signup_type": {
+            "title": "회원가입 타입",
+            "type": "string"
+        },
+        "triage_tutorial": {
+            "title": "트리아지 튜토리얼",
+            "type": "string"
+        },
+        "oauth_uuid": {
+            "title": "oauth uuid",
+            "type": "string"
+        },
+        "visit": {
+            "title": "로그인 회수",
+            "type": "integer"
+        },
+        "license": {
+            "title": "라이센스",
+            "type": "string"
+        },
+        "profile_img_path": {
+            "title": "프로필이미지경로",
+            "type": "string"
+        },
+        "demo": {
+            "title": "데모사용자",
+            "type": "boolean"
+        },
+        "notifications": {
+            "title": "알림목록",
+            "type": "array",
+            "items": [{
+                "title": "알림",
+                "type": "object",
+                "properties": {
+                    "_id": {
+                        "title": "알림 아이디",
+                        "type": "string"
+                    },
+                    "title": {
+                        "title": "제목",
+                        "type": "string"
+                    },
+                    "content": {
+                        "title": "내용",
+                        "type": "string"
+                    },
+                    "origin": {
+                        "title": "발생지",
+                        "type": "string"
+                    },
+                    "origin_id": {
+                        "title": "발생지 아이디",
+                        "type": "string"
+                    },
+                    "created_at": {
+                        "title": "등록일시",
+                        "type": "integer"
+                    },
+                    "view_at": {
+                        "title": "조회일시",
+                        "type": "integer"
+                    }
+                }
+            }]
+        },
+        "notice_views": {
+            "title": "공지사황 조회목록",
+            "type": "array",
+            "items": [{
+                "title": "공지사항 조회 데이터",
+                "type": "object",
+                "properties": {
+                    "notice_id": {
+                        "title": "공지사항 아이디",
+                        "type": "string"
+                    },
+                    "view_at": {
+                        "title": "조회일시",
+                        "type": "integer"
+                    }
+                }
+            }]
+        },
+        "auth": {
+            "title": "인증",
+            "type": "object",
+            "properties": {
+                "token": {
+                    "title": "토큰",
+                    "type": "string"
+                },
+                "updated_at": {
+                    "title": "업데이트 일시",
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "token",
+                "updated_at"
+            ]
+        }
+    },
+    "required": [
+        "_id",
+        "user_email",
+        "user_pw",
+        "user_level",
+        "first_name",
+        "last_name",
+        "nickname",
+        "company",
+        "department",
+        "job_type",
+        "created_at",
+        "updated_at",
+        "certificated_at",
+        "closed_at",
+        "marketing_consent",
+        "certification_confirmed",
+        "salt",
+        "tmp_pw",
+        "signup_type",
+        "triage_tutorial",
+        "oauth_uuid",
+        "visit",
+        "license",
+        "profile_img_path",
+        "auth"
+    ]
+}

@@ -1,0 +1,42 @@
+{
+    "Level": "Level D", //종류
+    "PPEPlayType": 0, //0 :착의, 1: 탈의
+    "StartTime": 1593112658673, //시작 시간
+    "FinishTime": 0,//끝난시간
+    "Reseults": [
+        {
+            "Step": "손위생", //진행단계
+            "Result": 1 // 결과 0= none, 1 = pass, 2= Error
+        },
+        {
+            "Step": "속장갑",
+            "Result": 1
+        },
+        {
+            "Step": "보호복",
+            "Result": 1
+        },
+        {
+            "Step": "덧신",
+            "Result": 1
+        },
+        {
+            "Step": "마스크",
+            "Result": 1
+        },
+        {
+            "Step": "고글",
+            "Result": 1
+        },
+        {
+            "Step": "고글",
+            "Result": 1
+        },
+        {
+            "Step": "겉장갑",
+            "Result": 1
+        }
+    ],
+    "PassCount": 8,
+    "ErrorCount": 0
+}

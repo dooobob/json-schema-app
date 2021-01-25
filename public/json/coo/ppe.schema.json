@@ -1,0 +1,106 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "_id": {
+            "title": "아이디",
+            "type": "string"
+        },
+        "user_email": {
+            "title": "사용자 이메일",
+            "type": "string"
+        },
+        "cloth_type": {
+            "title": "보호복 타입",
+            "type": "string",
+            "description": "Level D, Level C"
+        },
+        "play_type": {
+            "title": "플레이 타입",
+            "type": "string",
+            "description": "wearing, removing"
+        },
+        "start_time": {
+            "title": "시작시간",
+            "type": "integer"
+        },
+        "end_time": {
+            "title": "종료시간",
+            "type": "integer"
+        },
+        "pass": {
+            "title": "패스여부",
+            "type": "boolean"
+        },
+        "results": {
+            "title": "스탭 별 결과",
+            "type": "array",
+            "items": [{
+                "type": "object",
+                "properties": {
+                    "index": {
+                        "title": "단계 순서",
+                        "type": "integer"
+                    },
+                    "step": {
+                        "title": "단계 이름",
+                        "type": "string",
+                        "description": "HandSanitizer, Mask, ..."
+                    },
+                    "result": {
+                        "title": "결과 여부",
+                        "type": "integer",
+                        "description": "0:none, 1:pass, 2:Error"
+                    },
+                    "score": {
+                        "title": "배당된 점수",
+                        "type": "integer"
+                    },
+                    "localizeKey": {
+                        "title": "로컬라이징 키",
+                        "type": "string"
+                    },
+                    "texture_index": {
+                        "title": "결과이미지 인덱스키",
+                        "type": "integer"
+                    },
+                    "popupData_index": {
+                        "title": "팝업데이터 인덱스키",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "index",
+                    "step",
+                    "result"
+                ]
+            }]
+        },
+        "total_score": {
+            "title": "토탈 점수",
+            "type": "number"
+        },
+        "total_count": {
+            "title": "결과 총갯수",
+            "type": "integer"
+        },
+        "correct_count": {
+            "title": "정답(맞은)개수",
+            "type": "integer"
+        },
+        "texture_asset_name": {
+            "title": "결과창 텍스트에셋 불러올 파일이름",
+            "type": "string"
+        }
+    },
+    "required": [
+        "_id",
+        "user_email",
+        "cloth_type",
+        "play_type",
+        "start_time",
+        "end_time",
+        "pass",
+        "results"
+    ]
+}

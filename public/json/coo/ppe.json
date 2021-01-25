@@ -1,0 +1,22 @@
+{
+    "_id": "",
+    "user_email": "",
+    "cloth_type": "",
+    "play_type": "",
+    "start_time": 0,
+    "end_time": 0,
+    "pass": false,
+    "results": [{
+        "index": 0,
+        "step": "",
+        "result": 0,
+        "score": 0,
+        "localizeKey": "",
+        "texture_index": 0,
+        "popupData_index": 0
+    }],
+    "total_score": 0,
+    "total_count": 0,
+    "correct_count": 0,
+    "texture_asset_name": ""
+}

@@ -1,0 +1,105 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "_id": {
+            "title": "id",
+            "type": "string"
+        },
+        "created_by": {
+            "title": "생성자",
+            "type": "string"
+        },
+        "updated_by": {
+            "title": "수정자",
+            "type": "string"
+        },
+        "created_at": {
+            "title": "생성일시",
+            "type": "string"
+        },
+        "updated_at": {
+            "title": "수정일시",
+            "type": "string"
+        },
+        "customer_name": {
+            "title": "고객명",
+            "type": "string"
+        },
+        "department": {
+            "title": "부서",
+            "type": "string"
+        },
+        "classification": {
+            "title": "분류",
+            "type": "string"
+        },
+        "organization": {
+            "title": "기관",
+            "type": "string"
+        },
+        "post_code": {
+            "title": "우편번호",
+            "type": "string"
+        },
+        "address_main": {
+            "title": "주소1",
+            "type": "string"
+        },
+        "address_sub": {
+            "title": "주소2",
+            "type": "string"
+        },
+        "description": {
+            "title": "설명",
+            "type": "string"
+        },
+        "contact_type": {
+            "title": "연락처타입",
+            "type": "string"
+        },
+        "managers": {
+            "title": "담당자",
+            "type": "array",
+            "items": [{
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "title": "이름",
+                        "type": "string"
+                    },
+                    "phone": {
+                        "title": "전화번호",
+                        "type": "string"
+                    },
+                    "email": {
+                        "title": "이메일",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "name",
+                    "phone",
+                    "email"
+                ]
+            }]
+        }
+    },
+    "required": [
+        "_id",
+        "created_by",
+        "updated_by",
+        "created_at",
+        "updated_at",
+        "customer_name",
+        "department",
+        "classification",
+        "organization",
+        "post_code",
+        "address_main",
+        "address_sub",
+        "description",
+        "contact_type",
+        "managers"
+    ]
+}

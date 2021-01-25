@@ -1,0 +1,42 @@
+{
+    "channel_num": 0,
+    "created_by": "",
+    "created_at": 0,
+    "updated_by": "",
+    "updated_at": 0,
+    "single_mode": true,
+    "scenario_name": "",
+    "location": "",
+    "accident": "",
+    "casualties_count": 0,
+    "scenario_state": "",
+    "playing_state": false,
+    "play_time": 0,
+    "start_time": 0,
+    "end_time": 0,
+    "pause": [0],
+    "resume": [0],
+    "participants": [{
+        "user_email": "",
+        "nickname": "",
+        "role": "",
+        "triage_method": "",
+        "global_sorting": false,
+        "level": 0,
+        "evaluation": {}
+    }],
+    "patients": [""],
+    "checked_patients": [0],
+    "noname_count_male": 0,
+    "noname_count_female": 0,
+    "patients_triage_count": {
+        "red": 0,
+        "yellow": 0,
+        "green": 0,
+        "black": 0,
+        "gray": 0
+    },
+    "scenario_type": "triage",
+    "demo": false,
+    "map_name": ""
+}

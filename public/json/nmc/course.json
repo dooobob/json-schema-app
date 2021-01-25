@@ -1,0 +1,20 @@
+{
+    "title": "",
+    "description": "",
+    "aim": "",
+    "target": "",
+    "completion_requirement": "",
+    "topics": [{
+        "lessons": [{
+            "title": "",
+            "type": "",
+            "time": 0,
+            "detail": ""
+        }]
+    }],
+    "thumb_path": "",
+    "img_path": "",
+    "time": 0,
+    "created_at": 0,
+    "approval_time": ""
+}

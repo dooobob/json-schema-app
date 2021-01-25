@@ -1,0 +1,33 @@
+{
+    "location": "",
+    "accident": "",
+    "casualties_count": 0,
+    "select_triage_type": "",
+    "triage_accuracy": 0.0,
+    "aid_accuracy": 0.0,
+    "aid_priority": 0.0,
+    "aid_perfect": false,
+    "over_triage": 0,
+    "under_triage": 0,
+    "gcs_accuracy": 0.0,
+    "gcs_correct": 0,
+    "patient_feedbacks": [{
+        "good_triage": "",
+        "selected_triage": "",
+        "good_gcs": {
+            "eye_opening": 4,
+            "verbal": 5,
+            "motor": 6
+        },
+        "selected_gcs": {
+            "eye_opening": 4,
+            "verbal": 5,
+            "motor": 6
+        },
+        "aid_time": 0,
+        "name": "",
+        "gender": "",
+        "age": 0.0,
+        "comments": [""]
+    }]
+}

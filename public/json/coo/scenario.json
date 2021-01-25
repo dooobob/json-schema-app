@@ -1,0 +1,28 @@
+{
+    "channel_num": 0,
+    "created_by": "",
+    "created_at": 0,
+    "updated_by": "",
+    "updated_at": 0,
+    "single_mode": true,
+    "scenario_name": "",
+    "location": "",
+    "accident": "",
+    "casualties_count": 0,
+    "scenario_state": "",
+    "playing_state": false,
+    "play_time": 0,
+    "start_time": 0,
+    "end_time": 0,
+    "pause": [0],
+    "resume": [0],
+    "participants": [{
+        "user_email": "",
+        "nickname": "",
+        "role": "",
+        "triage_method": "",
+        "level": 0,
+        "evaluation": {}
+    }],
+    "patients": [""]
+}

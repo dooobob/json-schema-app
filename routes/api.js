@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var user = require('../public/json/user');
 var contact = require('../public/json/contact');
+var customer = require('../public/json/customer');
 var todo = require('../public/json/todo');
 var item = require('../public/json/item');
 var kit = require('../public/json/kit');
@@ -17,6 +18,10 @@ router.get('/user', function (req, res, next) {
 
 router.get('/contact', function (req, res, next) {
   res.json(contact);
+});
+
+router.get('/customer', function (req, res, next) {
+  res.json(customer);
 });
 
 router.get('/todo', function (req, res, next) {

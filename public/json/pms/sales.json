@@ -1,0 +1,179 @@
+{
+    "_id": "",
+    "sales_id": "",
+    "created_by": "",
+    "updated_by": "",
+    "created_at": "",
+    "updated_at": "",
+    "basic_info": {
+        "customer": {
+            "customer_id": "",
+            "customer_name": "",
+            "department": "",
+            "classification": "",
+            "organization": "",
+            "post_code": "",
+            "address_main": "",
+            "address_sub": "",
+            "manager": {
+                "name": "",
+                "phone": "",
+                "email": ""
+            }
+        },
+        "contractor": {
+            "customer_id": "",
+            "customer_name": "",
+            "department": "",
+            "manager": {
+                "name": "",
+                "phone": "",
+                "email": ""
+            }
+        },
+        "requirement": {
+            "logo_change": false,
+            "design_change": false
+        },
+        "status_history": {
+            "demand_end": "",
+            "payment_end": "",
+            "order_ready": "",
+            "order_end": "",
+            "shipping_end": "",
+            "cancel_sales": ""
+        },
+        "current_status": {
+            "sales": "",
+            "order": ""
+        },
+        "shipping": {
+            "post_code": "",
+            "address_main": "",
+            "address_sub": "",
+            "delivery_company": "",
+            "delivery_code": ""
+        },
+        "interest": [{
+            "kit_id": "",
+            "ori_id": "",
+            "version": 0,
+            "kit_name": ""
+        }],
+        "demand_price": 0,
+        "demand_price_with_vat": 0,
+        "demand_cost": 0,
+        "kit_name": "",
+        "source": "",
+        "route": "",
+        "payment_way": "",
+        "note": "",
+        "priority": 0
+    },
+    "managers": {
+        "sales": {
+            "user_id": "",
+            "user_name": "",
+            "user_email": ""
+        },
+        "design": {
+            "user_id": "",
+            "user_name": "",
+            "user_email": ""
+        },
+        "order": {
+            "user_id": "",
+            "user_name": "",
+            "user_email": ""
+        },
+        "shipping": {
+            "user_id": "",
+            "user_name": "",
+            "user_email": ""
+        }
+    },
+    "comments": [{
+        "_id": "",
+        "created_by": "",
+        "updated_by": "",
+        "created_at": "",
+        "updated_at": "",
+        "content": "",
+        "refer": [""],
+        "reply": [{
+            "_id": "",
+            "created_by": "",
+            "created_at": "",
+            "content": "",
+            "refer": [""]
+        }],
+        "demand": {
+            "created_by": "",
+            "updated_by": "",
+            "created_at": "",
+            "updated_at": "",
+            "active": false,
+            "note": "",
+            "title": "",
+            "estimate_date": "",
+            "kits": [{
+                "kit_id": "",
+                "ori_id": "",
+                "version": 0,
+                "saved": 0,
+                "latest": false,
+                "active": false,
+                "quantity": 0,
+                "basic_info": {
+                    "kit_name": "",
+                    "distinction": "",
+                    "classification": "",
+                    "note": "",
+                    "cost": 0,
+                    "price": 0,
+                    "wholesale_price": 0,
+                    "bidding_price": 0
+                },
+                "items": [{
+                    "item_id": "",
+                    "ori_id": "",
+                    "version": 0,
+                    "saved": 0,
+                    "basic_info": {
+                        "item_name": "",
+                        "distinction": "",
+                        "classification": "",
+                        "type": "",
+                        "cost": 0,
+                        "price": 0,
+                        "quantity": 1,
+                        "file_name": "",
+                        "file_url": "",
+                        "shop": {
+                            "shop_id": "",
+                            "shop_name": ""
+                        }
+                    },
+                    "components": [{
+                        "component_id": "",
+                        "component_name": "",
+                        "volume": 0,
+                        "quantity": 0,
+                        "stock": 0,
+                        "size": "",
+                        "note": "",
+                        "spec": {
+                            "spec_id": "",
+                            "spec_code": "",
+                            "classification_code": "",
+                            "code_index": 0,
+                            "material": "",
+                            "print": "",
+                            "processing": ""
+                        }
+                    }]
+                }]
+            }]
+        }
+    }]
+}

@@ -1,0 +1,393 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "type": {
+            "title": "환자타입",
+            "type": "string"
+        },
+        "id": {
+            "title": "환자번호",
+            "type": "integer"
+        },
+        "triage": {
+            "title": "트리아지 정답",
+            "type": "object",
+            "properties": {
+                "mass": {
+                    "title": "MASS",
+                    "type": "string"
+                },
+                "start": {
+                    "title": "START",
+                    "type": "string"
+                },
+                "salt": {
+                    "title": "SALT",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "mass",
+                "start",
+                "salt"
+            ]
+        },
+        "gender": {
+            "title": "성별",
+            "description": "male:true, female:false",
+            "type": "boolean"
+        },
+        "age": {
+            "title": "나이",
+            "type": "number"
+        },
+        "nationality": {
+            "title": "국적",
+            "type": "string"
+        },
+        "can": {
+            "title": "환자상태",
+            "type": "object",
+            "properties": {
+                "walk": {
+                    "title": "보행여부",
+                    "type": "boolean"
+                },
+                "move": {
+                    "title": "반응여부",
+                    "type": "boolean"
+                },
+                "breath": {
+                    "title": "호흡여부",
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "walk",
+                "move",
+                "breath"
+            ]
+        },
+        "injury": {
+            "title": "환자 손상정보",
+            "type": "array",
+            "items": [{
+                "title": "손상 데이터",
+                "type": "object",
+                "properties": {
+                    "part": {
+                        "title": "손상부위",
+                        "type": "number"
+                    },
+                    "injury": {
+                        "title": "손상 아이디",
+                        "type": "integer"
+                    },
+                    "degree": {
+                        "title": "손상정도",
+                        "type": "integer"
+                    },
+                    "tool": {
+                        "title": "처치장비 정답",
+                        "type": "array",
+                        "items": [{
+                            "title": "처치장비",
+                            "type": "string"
+                        }]
+                    }
+                },
+                "required": [
+                    "part",
+                    "injury",
+                    "degree",
+                    "tool"
+                ]
+            }]
+        },
+        "first_impression": {
+            "title": "첫인상",
+            "type": "object",
+            "properties": {
+                "name": {
+                    "title": "아이디",
+                    "type": "string"
+                },
+                "detail": {
+                    "title": "세부내용",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "name",
+                "detail"
+            ]
+        },
+        "breath_kind": {
+            "title": "호흡종류",
+            "type": "integer"
+        },
+        "cause_injury": {
+            "title": "사고기전",
+            "type": "object",
+            "properties": {
+                "name": {
+                    "title": "아이디",
+                    "type": "string"
+                },
+                "detail": {
+                    "title": "내용",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "name",
+                "detail"
+            ]
+        },
+        "symptoms": {
+            "title": "증상",
+            "type": "array",
+            "items": [{
+                "title": "주호소",
+                "type": "object",
+                "properties": {
+                    "cc": {
+                        "title": "아이디",
+                        "type": "integer"
+                    },
+                    "tool": {
+                        "title": "장비 정답",
+                        "type": "array",
+                        "items": [{
+                            "title": "장비",
+                            "type": "string"
+                        }]
+                    }
+                },
+                "required": [
+                    "cc",
+                    "tool"
+                ]
+            }]
+        },
+        "pain_scale": {
+            "title": "고통 정도",
+            "type": "integer"
+        },
+        "diagnosis": {
+            "title": "바이탈 정보",
+            "type": "object",
+            "properties": {
+                "respiration_rate": {
+                    "title": "호흡",
+                    "type": "integer"
+                },
+                "bp_sp": {
+                    "title": "수축기혈압",
+                    "type": "integer"
+                },
+                "bp_dp": {
+                    "title": "이완기혈압",
+                    "type": "integer"
+                },
+                "pulse": {
+                    "title": "맥박",
+                    "type": "integer"
+                },
+                "oxygen": {
+                    "title": "산소포화도",
+                    "type": "integer"
+                },
+                "temperature": {
+                    "title": "체온",
+                    "type": "number"
+                }
+            },
+            "required": [
+                "respiration_rate",
+                "bp_sp",
+                "bp_dp",
+                "pulse",
+                "oxygen",
+                "temperature"
+            ]
+        },
+        "response": {
+            "title": "반응여부",
+            "type": "object",
+            "properties": {
+                "eye_opening": {
+                    "title": "개안반응",
+                    "type": "integer"
+                },
+                "verbal": {
+                    "title": "언어반응",
+                    "type": "integer"
+                },
+                "motor": {
+                    "title": "운동반응",
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "eye_opening",
+                "verbal",
+                "motor"
+            ]
+        },
+        "gcs_score": {
+            "title": "gcs 점수",
+            "type": "integer"
+        },
+        "gcs": {
+            "title": "gcs 평가",
+            "type": "string"
+        },
+        "avpu": {
+            "title": "avpu 평가",
+            "type": "string"
+        },
+        "vumark_id": {
+            "title": "뷰마크 아이디",
+            "type": "integer"
+        },
+        "patient_name": {
+            "title": "환자이름",
+            "type": "string"
+        },
+        "cloth_colors": {
+            "title": "옷 색상",
+            "type": "array",
+            "items": [{
+                "title": "색상코드",
+                "type": "string"
+            }]
+        },
+        "hair_color": {
+            "title": "머리 색상",
+            "type": "string"
+        },
+        "hair_id": {
+            "title": "머리 색상",
+            "type": "string"
+        },
+        "diagnosis_check": {
+            "title": "바이탈 확인여부",
+            "type": "array",
+            "items": [{
+                "title": "확인여부",
+                "type": "boolean"
+            }]
+        },
+        "aid_history": {
+            "title": "처치데이터",
+            "type": "array",
+            "items": [{
+                "title": "처치",
+                "type": "object",
+                "properties": {
+                    "aid_id": {
+                        "title": "처치아이디",
+                        "type": "string"
+                    },
+                    "parts": {
+                        "title": "처치부위",
+                        "type": "integer"
+                    },
+                    "show_type": {
+                        "title": "앱내 카테고리 구분키",
+                        "type": "number"
+                    },
+                    "tools": {
+                        "title": "처치장비",
+                        "type": "array",
+                        "items": [{
+                            "title": "장비아이디",
+                            "description": "끝에 D가 붙으면 의료지도 받은상태",
+                            "type": "string"
+                        }]
+                    },
+                    "time": {
+                        "title": "처치시간",
+                        "type": "integer"
+                    },
+                    "practiced_by": {
+                        "title": "처치한 사용자",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "aid_id",
+                    "parts",
+                    "show_type",
+                    "tools",
+                    "time",
+                    "practiced_by"
+                ]
+            }]
+        },
+        "triage_history": {
+            "title": "트리아지 데이터",
+            "type": "array",
+            "items": [{
+                "title": "트리아지",
+                "type": "object",
+                "properties": {
+                    "method": {
+                        "title": "방법",
+                        "description": "mass, start, salt",
+                        "type": "string"
+                    },
+                    "value": {
+                        "title": "선택값",
+                        "description": "R, Y, G, B",
+                        "type": "string"
+                    },
+                    "time": {
+                        "title": "분류시간",
+                        "type": "integer"
+                    },
+                    "practiced_by": {
+                        "title": "분류한 사용자",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "value",
+                    "method",
+                    "time",
+                    "practiced_by"
+                ]
+            }]
+        }
+    },
+    "required": [
+        "type",
+        "id",
+        "triage",
+        "gender",
+        "age",
+        "nationality",
+        "can",
+        "injury",
+        "first_impression",
+        "breath_kind",
+        "cause_injury",
+        "symptoms",
+        "pain_scale",
+        "diagnosis",
+        "response",
+        "gcs_score",
+        "gcs",
+        "avpu",
+        "vumark_id",
+        "patient_name",
+        "cloth_colors",
+        "hair_color",
+        "hair_id",
+        "diagnosis_check",
+        "aid_history",
+        "triage_history"
+    ]
+}
